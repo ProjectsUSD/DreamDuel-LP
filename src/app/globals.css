@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Nunito:wght@300;400;600;700;800&display=swap');
+
+@layer base {
+  body {
+    @apply bg-primary-dark text-white font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-neon-magenta via-neon-purple to-accent-purple;
+  }
+  
+  .glow-pink {
+    box-shadow: 0 0 30px rgba(255, 0, 110, 0.7), 0 0 60px rgba(255, 10, 120, 0.4);
+  }
+  
+  .glow-violet {
+    box-shadow: 0 0 30px rgba(183, 148, 246, 0.7), 0 0 60px rgba(199, 125, 255, 0.4);
+  }
+  
+  .backdrop-blur-custom {
+    backdrop-filter: blur(16px);
+  }
+}

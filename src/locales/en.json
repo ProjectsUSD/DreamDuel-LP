@@ -1,0 +1,142 @@
+{
+  "hero": {
+    "title": "Your Fantasies, Your Script, Your Reality",
+    "subtitle": "Create hentai stories and videos with your dream waifus. Uncensored generative AI that turns every desire into visual reality.",
+    "cta": "Create My Fantasy Free",
+    "ctaSecondary": "View Spicy Demo 🔥"
+  },
+  "ageVerification": {
+    "title": "Age Verification",
+    "message": "This site contains content intended exclusively for adults. You must be 18 years or older to continue.",
+    "confirm": "I am 18 or older",
+    "decline": "Exit",
+    "disclaimer": "By continuing, you confirm that you are of legal age in your jurisdiction."
+  },
+  "features": {
+    "title": "Experience the Power of Limitless AI",
+    "subtitle": "Designed for creators seeking absolute narrative freedom",
+    "cta": "Start Now",
+    "ctaQuestion": "Ready to experience total freedom?",
+    "items": [
+      {
+        "title": "Infinite Memory",
+        "description": "The AI remembers every detail of your story. No resets, no interruptions."
+      },
+      {
+        "title": "No Filters",
+        "description": "Total creative freedom. Explore any scenario without restrictions."
+      },
+      {
+        "title": "Complete Privacy",
+        "description": "Your stories are yours. End-to-end encryption and guaranteed anonymity."
+      },
+      {
+        "title": "AI-Generated Videos",
+        "description": "Transform your stories into animated hentai videos. High-quality visual generation with your exact scenes."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Choose Your Adventure",
+    "subtitle": "Start free and expand your possibilities",
+    "guarantee": "Have questions? All plans include 7-day guarantee",
+    "free": {
+      "name": "Free",
+      "price": "0",
+      "currency": "$",
+      "period": "/month",
+      "features": [
+        "50 messages per month",
+        "Access to basic characters",
+        "5 image generations/month",
+        "Unlimited saved stories",
+        "Email support"
+      ],
+      "cta": "Start Free"
+    },
+    "premium": {
+      "name": "Premium",
+      "price": "12.99",
+      "currency": "$",
+      "period": "/month",
+      "popular": "Most Popular",
+      "features": [
+        "Unlimited messages",
+        "All characters unlocked",
+        "Unlimited image generation",
+        "Hentai video generation (up to 30s)",
+        "Extended memory (32K context)",
+        "24/7 priority support",
+        "New characters every week",
+        "HD export without watermark"
+      ],
+      "cta": "Unlock Premium"
+    }
+  },
+  "characters": {
+    "title": "Meet Your Companions",
+    "types": ["Tsundere", "Dominant", "Shy", "Mysterious", "Adventurous", "Intellectual", "Rebel", "Elegant"]
+  },
+  "simulator": {
+    "title": "Try the Generator",
+    "subtitle": "Select tags and watch the AI create your story",
+    "tags": ["Romance", "Fantasy", "School", "Action", "Mystery", "Sci-Fi", "Supernatural", "Slice of Life"],
+    "generate": "Generate Story",
+    "result": "Your story: ",
+    "continueStory": "Continue Story 🔥",
+    "generateAnother": "Generate Another ✨"
+  },
+  "showcase": {
+    "scrollHint": "Scroll to explore",
+    "scenarios": [
+      {
+        "title": "The Strict Teacher",
+        "description": "After class, she asks you to stay. Her stern eyes hide burning desire. \"We need to talk about your... performance,\" she says while locking the door."
+      },
+      {
+        "title": "The Demon Queen",
+        "description": "You conquered the dark kingdom, but she conquered you. \"Kneel, hero,\" she commands with a wicked smile. \"Tonight, you serve me.\""
+      },
+      {
+        "title": "The Lost Siren",
+        "description": "Under moonlight, she emerges from water. Drops shimmer on her skin as she gazes with hungry eyes. \"I've been waiting for you,\" she whispers. \"Come... the ocean keeps our secrets.\""
+      },
+      {
+        "title": "The Seductive Ninja",
+        "description": "She appears in your room like a shadow in the night. \"I was hired to eliminate you,\" she purrs, \"but I think I'll enjoy torturing you first.\" Her hands begin to untie her kimono."
+      }
+    ]
+  },
+  "characterCarousel": {
+    "meetButton": "Meet {name} 💕",
+    "subtitle": "Each one waits for you... Who will you choose?"
+  },
+  "testimonials": {
+    "title": "What Our Users Say",
+    "subtitle": "Thousands of creators are already living their fantasies",
+    "items": [
+      {
+        "text": "AnimaTales has allowed me to explore narratives I never imagined. The AI is incredibly immersive and privacy is real.",
+        "author": "Sarah M.",
+        "role": "Content Creator"
+      },
+      {
+        "text": "Finally a platform that understands what fans really want. No censorship, no limits. Perfect.",
+        "author": "James T.",
+        "role": "Anime Fan"
+      },
+      {
+        "text": "As a writer, this tool constantly inspires me. The infinite memory completely changes the game.",
+        "author": "Emma L.",
+        "role": "Writer"
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Where your fantasies come to life",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "contact": "Contact",
+    "copyright": "© 2025 AnimaTales. All rights reserved."
+  }
+}

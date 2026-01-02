@@ -1,0 +1,142 @@
+{
+  "hero": {
+    "title": "Tus Fantasías, Tu Guion, Tu Realidad",
+    "subtitle": "Crea historias y videos hentai con las waifus de tus sueños. IA generativa sin censura que convierte cada deseo en realidad visual.",
+    "cta": "Crear Mi Fantasía Gratis",
+    "ctaSecondary": "Ver Demo Picante 🔥"
+  },
+  "ageVerification": {
+    "title": "Verificación de Edad",
+    "message": "Este sitio contiene contenido destinado exclusivamente para adultos. Debes ser mayor de 18 años para continuar.",
+    "confirm": "Soy mayor de 18 años",
+    "decline": "Salir",
+    "disclaimer": "Al continuar, confirmas que eres mayor de edad en tu jurisdicción."
+  },
+  "features": {
+    "title": "Experimenta el Poder de la IA sin Límites",
+    "subtitle": "Diseñado para creadores que buscan libertad narrativa absoluta",
+    "cta": "Comenzar Ahora",
+    "ctaQuestion": "¿Listo para experimentar la libertad total?",
+    "items": [
+      {
+        "title": "Memoria Infinita",
+        "description": "La IA recuerda cada detalle de tu historia. Sin reinicios, sin interrupciones."
+      },
+      {
+        "title": "Sin Filtros",
+        "description": "Libertad creativa total. Explora CUALQUIER escenario íntimo sin restricciones. Tus deseos más profundos, realizados."
+      },
+      {
+        "title": "Privacidad Total",
+        "description": "Tus historias son tuyas. Encriptación de extremo a extremo y anonimato garantizado."
+      },
+      {
+        "title": "Videos Generados por IA",
+        "description": "Transforma tus historias en videos hentai animados. Visualiza tus escenas más íntimas en alta calidad."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Elige tu Aventura",
+    "subtitle": "Comienza gratis y expande tus posibilidades",
+    "guarantee": "¿Tienes dudas? Todos los planes incluyen garantía de 7 días",
+    "free": {
+      "name": "Free",
+      "price": "0",
+      "currency": "€",
+      "period": "/mes",
+      "features": [
+        "50 mensajes al mes",
+        "Acceso a personajes básicos",
+        "5 generaciones de imágenes/mes",
+        "Historias guardadas ilimitadas",
+        "Soporte por email"
+      ],
+      "cta": "Comenzar Gratis"
+    },
+    "premium": {
+      "name": "Premium",
+      "price": "12.99",
+      "currency": "€",
+      "period": "/mes",
+      "popular": "Más Popular",
+      "features": [
+        "Mensajes ilimitados",
+        "Todos los personajes desbloqueados",
+        "Generación ilimitada de imágenes",
+        "Generación de videos hentai (hasta 30s)",
+        "Memoria extendida (contexto 32K)",
+        "Soporte prioritario 24/7",
+        "Nuevos personajes cada semana",
+        "Exportación en HD sin marca de agua"
+      ],
+      "cta": "Desbloquear Premium"
+    }
+  },
+  "characters": {
+    "title": "Conoce a Tus Compañeras",
+    "types": ["Tsundere 💕", "Dominante 🔥", "Tímida 😳", "Misteriosa 🌙", "Aventurera ⚡", "Intelectual 📚", "Rebelde 😈", "Elegante 👑"]
+  },
+  "simulator": {
+    "title": "Prueba el Generador Ahora",
+    "subtitle": "Selecciona elementos y observa cómo la IA crea tu fantasía perfecta",
+    "tags": ["Romance", "Fantasía", "Escuela", "Playa", "Noche", "Onsen", "Dormitorio", "Sobrenatural"],
+    "generate": "Generar Mi Escena 🔥",
+    "result": "Tu escena perfecta: ",
+    "continueStory": "Continuar Historia 🔥",
+    "generateAnother": "Generar Otra ✨"
+  },
+  "showcase": {
+    "scrollHint": "Scroll para explorar",
+    "scenarios": [
+      {
+        "title": "La Profesora Estricta",
+        "description": "Después de clase, ella te pide que te quedes. Sus ojos severos esconden un deseo ardiente. \"Necesitamos hablar sobre tu... rendimiento\", dice mientras cierra la puerta con llave."
+      },
+      {
+        "title": "La Reina Demonio",
+        "description": "Conquistaste el reino oscuro, pero ella te conquistó a ti. \"Arrodíllate, héroe\", ordena con una sonrisa maliciosa. \"Esta noche, tú me servirás a mí.\""
+      },
+      {
+        "title": "La Sirena Perdida",
+        "description": "Bajo la luz de la luna, emerge del agua. Gotas brillan en su piel mientras te mira con ojos hambrientos. \"Te he estado esperando\", susurra. \"Ven... el océano guarda nuestros secretos.\""
+      },
+      {
+        "title": "La Ninja Seductora",
+        "description": "Aparece en tu habitación como sombra en la noche. \"Me contrataron para eliminarte\", ronronea, \"pero creo que voy a disfrutar torturándote primero.\" Sus manos comienzan a desatar su kimono."
+      }
+    ]
+  },
+  "characterCarousel": {
+    "meetButton": "Conocer a {name} 💕",
+    "subtitle": "Cada una espera por ti... ¿A quién elegirás?"
+  },
+  "testimonials": {
+    "title": "Lo que Dicen Nuestros Usuarios",
+    "subtitle": "Miles de creadores ya están viviendo sus fantasías",
+    "items": [
+      {
+        "text": "AnimaTales me ha permitido explorar narrativas que nunca imaginé. La IA es increíblemente inmersiva y la privacidad es real.",
+        "author": "María L.",
+        "role": "Creadora de Contenido"
+      },
+      {
+        "text": "Por fin una plataforma que entiende lo que los fans realmente queremos. Sin censura, sin límites. Perfecto.",
+        "author": "Carlos R.",
+        "role": "Fan de Anime"
+      },
+      {
+        "text": "Como escritora, esta herramienta me inspira constantemente. La memoria infinita cambia completamente el juego.",
+        "author": "Ana K.",
+        "role": "Escritora"
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Donde tus fantasías cobran vida",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "contact": "Contacto",
+    "copyright": "© 2025 AnimaTales. Todos los derechos reservados."
+  }
+}
