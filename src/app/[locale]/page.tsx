@@ -25,6 +25,9 @@ export default function Home() {
       {/* Animated Background */}
       <AnimatedBackground />
       
+      {/* Floating Characters */}
+      <FloatingCharacters />
+      
       {/* Modal de verificación de edad */}
       <AgeVerificationModal 
         translations={{
@@ -46,20 +49,6 @@ export default function Home() {
         }}
       />
 
-      {/* Immersive Showcase - Scroll Experience */}
-      <ImmersiveShowcase locale={locale} />
-
-      {/* Features Section */}
-      <FeaturesSection 
-        translations={{
-          title: t('features.title'),
-          subtitle: t('features.subtitle'),
-          items: t.raw('features.items'),
-          cta: t('features.cta'),
-          ctaQuestion: t('features.ctaQuestion'),
-        }}
-      />
-
       {/* Live Simulator */}
       <LiveSimulator 
         translations={{
@@ -72,6 +61,20 @@ export default function Home() {
           generateAnother: t('simulator.generateAnother'),
           uploadPhoto: t('simulator.uploadPhoto'),
           selectStyle: t('simulator.selectStyle'),
+        }}
+      />
+
+      {/* Immersive Showcase - Scroll Experience */}
+      <ImmersiveShowcase locale={locale} />
+
+      {/* Features Section */}
+      <FeaturesSection 
+        translations={{
+          title: t('features.title'),
+          subtitle: t('features.subtitle'),
+          items: t.raw('features.items'),
+          cta: t('features.cta'),
+          ctaQuestion: t('features.ctaQuestion'),
         }}
       />
 

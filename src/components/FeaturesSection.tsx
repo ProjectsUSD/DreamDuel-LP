@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Brain, Unlock, Shield, Film } from 'lucide-react';
+import { Brain, Unlock, Shield, Film, Users } from 'lucide-react';
 import Image from 'next/image';
 
 interface FeaturesSectionProps {
@@ -17,7 +17,7 @@ interface FeaturesSectionProps {
   };
 }
 
-const icons = [Brain, Unlock, Shield, Film];
+const icons = [Brain, Unlock, Shield, Film, Users];
 
 export default function FeaturesSection({ translations }: FeaturesSectionProps) {
   return (
@@ -27,37 +27,9 @@ export default function FeaturesSection({ translations }: FeaturesSectionProps) 
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-neon-pink/10 rounded-full blur-3xl" />
 
       {/* Floating 3D Girls - Features Section */}
-      <motion.div
-        className="hidden md:block absolute top-[10%] left-[0%] w-56 md:w-72 h-80 md:h-96 opacity-35 pointer-events-none"
-        animate={{
-          y: [0, -15, 0],
-          rotate: [-1, 2, -1],
-        }}
-        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
-      >
-        <Image
-          src="/images/floating-3d/floating-3.png"
-          alt="Floating character"
-          fill
-          className="object-contain"
-        />
-      </motion.div>
+      {/* Floating character 3 removed to avoid duplicate */}
 
-      <motion.div
-        className="hidden md:block absolute bottom-[10%] right-[1%] w-64 md:w-80 h-[350px] md:h-[420px] opacity-40 pointer-events-none"
-        animate={{
-          y: [0, 20, 0],
-          rotate: [2, -2, 2],
-        }}
-        transition={{ duration: 11, repeat: Infinity, ease: "easeInOut" }}
-      >
-        <Image
-          src="/images/floating-3d/floating-4.png"
-          alt="Floating character"
-          fill
-          className="object-contain"
-        />
-      </motion.div>
+      {/* Floating character 4 removed to avoid duplicate */}
 
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Header */}
@@ -67,10 +39,10 @@ export default function FeaturesSection({ translations }: FeaturesSectionProps) 
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gradient">
             {translations.title}
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
             {translations.subtitle}
           </p>
         </motion.div>

@@ -13,26 +13,30 @@
     "disclaimer": "Al continuar, confirmas que eres mayor de edad en tu jurisdicción."
   },
   "features": {
-    "title": "Experimenta el Poder de la IA sin Límites",
-    "subtitle": "Diseñado para creadores que buscan libertad narrativa absoluta",
+    "title": "Crea Arte Personalizado con IA Avanzada",
+    "subtitle": "Diseñado para creadores que buscan transformar cualquier imagen en arte único",
     "cta": "Comenzar Ahora",
-    "ctaQuestion": "¿Listo para experimentar la libertad total?",
+    "ctaQuestion": "¿Listo para crear tu obra maestra?",
     "items": [
       {
-        "title": "Memoria Infinita",
-        "description": "La IA recuerda cada detalle de tu historia. Sin reinicios, sin interrupciones."
+        "title": "Múltiples Estilos Artísticos",
+        "description": "Elige entre anime, realista, cartoon, pin-up, 3D y más. Cada estilo profesionalmente optimizado para resultados increíbles."
       },
       {
-        "title": "Sin Filtros",
-        "description": "Libertad creativa total. Explora CUALQUIER escenario íntimo sin restricciones. Tus deseos más profundos, realizados."
+        "title": "Personalización Total",
+        "description": "Transforma fotos de amigos, famosos, actores o personajes ficticios. Libertad creativa sin límites para cualquier proyecto."
       },
       {
-        "title": "Privacidad Total",
-        "description": "Tus historias son tuyas. Encriptación de extremo a extremo y anonimato garantizado."
+        "title": "Privacidad Garantizada",
+        "description": "Tus creaciones son privadas. Encriptación de extremo a extremo y eliminación automática opcional. Tu contenido, solo tuyo."
       },
       {
-        "title": "Videos Generados por IA",
-        "description": "Transforma tus historias en videos hentai animados. Visualiza tus escenas más íntimas en alta calidad."
+        "title": "Resultados en Segundos",
+        "description": "IA de última generación procesa tus imágenes en tiempo récord. Calidad profesional sin esperas largas."
+      },
+      {
+        "title": "Programa de Referidos - Gana Invitando Amigos",
+        "description": "Invita a tus amigos y ambos ganan: Tú recibes 2 semanas gratis de Premium por cada invitación exitosa. Tus amigos obtienen 15% de descuento en su primer mes. ¡Comparte y disfruta juntos!"
       }
     ]
   },
@@ -89,23 +93,33 @@
     "selectStyle": "Selecciona un estilo (máx. 2)"
   },
   "showcase": {
-    "scrollHint": "Scroll para explorar",
+    "title": "Ejemplos de Creaciones",
+    "subtitle": "Descubre las posibilidades infinitas de transformación artística",
+    "scrollHint": "Explora los estilos",
     "scenarios": [
       {
-        "title": "La Profesora Estricta",
-        "description": "Después de clase, ella te pide que te quedes. Sus ojos severos esconden un deseo ardiente. \"Necesitamos hablar sobre tu... rendimiento\", dice mientras cierra la puerta con llave."
+        "title": "Mi Crush del Anime Hecho Realidad",
+        "description": "María transformó a su streamer favorito en un personaje de anime estilo 'Demon Slayer'. Ahora tiene arte personalizado de él como si fuera protagonista de su serie preferida. ¿Tienes un influencer o amigo que te gustaría ver en estilo anime?"
       },
       {
-        "title": "La Reina Demonio",
-        "description": "Conquistaste el reino oscuro, pero ella te conquistó a ti. \"Arrodíllate, héroe\", ordena con una sonrisa maliciosa. \"Esta noche, tú me servirás a mí.\""
+        "title": "El Actor de la Serie que Amo",
+        "description": "Carlos creó arte sensual de su actor favorito de 'La Casa de Papel' en un escenario íntimo. Transformó capturas de pantalla en obras únicas que parecen sacadas de una sesión fotográfica exclusiva. ¿Qué celebridad te gustaría inmortalizar?"
       },
       {
-        "title": "La Sirena Perdida",
-        "description": "Bajo la luz de la luna, emerge del agua. Gotas brillan en su piel mientras te mira con ojos hambrientos. \"Te he estado esperando\", susurra. \"Ven... el océano guarda nuestros secretos.\""
+        "title": "Mi Profesor(a) de Universidad",
+        "description": "Andrea imaginó a su carismático profesor de literatura en un escenario romántico estilo película francesa. Subió una foto del campus y la IA creó una obra artística digna de portada de novela. ¿Tienes un crush universitario?"
       },
       {
-        "title": "La Ninja Seductora",
-        "description": "Aparece en tu habitación como sombra en la noche. \"Me contrataron para eliminarte\", ronronea, \"pero creo que voy a disfrutar torturándote primero.\" Sus manos comienzan a desatar su kimono."
+        "title": "Mi Amiga como Modelo Profesional",
+        "description": "Diego sorprendió a su mejor amiga transformando su foto casual en un retrato glamuroso estilo Vogue. La IA capturó su esencia pero elevada a sesión fotográfica de alto impacto. ¿Quieres ver a alguien especial en máxima elegancia?"
+      },
+      {
+        "title": "El Gamer que Admiro como Héroe Épico",
+        "description": "Luna convirtió a su streamer favorito de Twitch en un guerrero de 'Elden Ring' con armadura completa y espada legendaria. De gameplay a arte épico de videojuego. ¿Qué gamer o amigo verías como protagonista de RPG?"
+      },
+      {
+        "title": "Mi Cantante Favorito Estilo Pin-Up",
+        "description": "Roberto transformó a su artista musical preferido en una ilustración vintage años 50, mezclando su estilo moderno con estética retro clásica. Arte único que no existe en ningún otro lugar. ¿Qué músico o celebridad reimaginarías?"
       }
     ]
   },
@@ -115,22 +129,47 @@
   },
   "testimonials": {
     "title": "Lo que Dicen Nuestros Usuarios",
-    "subtitle": "Miles de creadores ya están viviendo sus fantasías",
+    "subtitle": "Creadores reales compartiendo sus experiencias",
     "items": [
       {
-        "text": "AnimaTales me ha permitido explorar narrativas que nunca imaginé. La IA es increíblemente inmersiva y la privacidad es real.",
-        "author": "María L.",
-        "role": "Creadora de Contenido"
+        "text": "Bro, transformé a mi actor favorito de La Casa de Papel en una escena íntima y quedó BRUTAL. La calidad es una locura, parece foto profesional posta.",
+        "author": "Alex R.",
+        "role": "Fan de Series"
       },
       {
-        "text": "Por fin una plataforma que entiende lo que los fans realmente queremos. Sin censura, sin límites. Perfecto.",
-        "author": "Carlos R.",
-        "role": "Fan de Anime"
+        "text": "Hice arte de mi crush de la uni en estilo anime y WOW... se lo mostré y flipó totalmente. Ahora todos mis compas me piden que les haga el suyo jaja.",
+        "author": "Diego S.",
+        "role": "Estudiante Universitario"
       },
       {
-        "text": "Como escritora, esta herramienta me inspira constantemente. La memoria infinita cambia completamente el juego.",
-        "author": "Ana K.",
-        "role": "Escritora"
+        "text": "No mames, convertí a mi streamer fav en personaje de Elden Ring y lo subió a su Instagram. Esto es otro level, literal arte personalizado en minutos.",
+        "author": "Luna G.",
+        "role": "Gamer"
+      },
+      {
+        "text": "Yo que pensaba que era raro fantasear con mi profesor... resulta que un montón de gente crea arte de sus crushes también. La privacidad es real y el resultado es 🔥",
+        "author": "Sofia M.",
+        "role": "Diseñadora Gráfica"
+      },
+      {
+        "text": "Llevo años siguiendo a esta actriz de k-dramas y ahora tengo arte exclusivo de ella que no existe en ningún lado. Los estilos disponibles están INSANOS.",
+        "author": "Carlos V.",
+        "role": "Coleccionista de Arte"
+      },
+      {
+        "text": "Mi mejor amiga cumplió años y le regalé un retrato de ella estilo pin-up vintage. Lloró de la emoción, es el mejor regalo que le han dado dice.",
+        "author": "Andrea K.",
+        "role": "Fotógrafa"
+      },
+      {
+        "text": "Honestamente pensé que sería una estafa pero probé el plan gratis y a la semana ya había pagado premium. Vale cada centavo si te gusta el arte personalizado.",
+        "author": "Roberto L.",
+        "role": "Artista Digital"
+      },
+      {
+        "text": "Transformé fotos de mi pareja en diferentes estilos artísticos para nuestro aniversario. El álbum que armé se volvió viral en TikTok con 2M de vistas.",
+        "author": "Javier P.",
+        "role": "Creador de Contenido"
       }
     ]
   },

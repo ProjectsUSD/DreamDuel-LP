@@ -13,26 +13,30 @@
     "disclaimer": "By continuing, you confirm that you are of legal age in your jurisdiction."
   },
   "features": {
-    "title": "Experience the Power of Limitless AI",
-    "subtitle": "Designed for creators seeking absolute narrative freedom",
+    "title": "Create Personalized Art with Advanced AI",
+    "subtitle": "Designed for creators looking to transform any image into unique art",
     "cta": "Start Now",
-    "ctaQuestion": "Ready to experience total freedom?",
+    "ctaQuestion": "Ready to create your masterpiece?",
     "items": [
       {
-        "title": "Infinite Memory",
-        "description": "The AI remembers every detail of your story. No resets, no interruptions."
+        "title": "Multiple Artistic Styles",
+        "description": "Choose from anime, realistic, cartoon, pin-up, 3D and more. Each style professionally optimized for incredible results."
       },
       {
-        "title": "No Filters",
-        "description": "Total creative freedom. Explore any scenario without restrictions."
+        "title": "Total Customization",
+        "description": "Transform photos of friends, celebrities, actors or fictional characters. Creative freedom without limits for any project."
       },
       {
-        "title": "Complete Privacy",
-        "description": "Your stories are yours. End-to-end encryption and guaranteed anonymity."
+        "title": "Guaranteed Privacy",
+        "description": "Your creations are private. End-to-end encryption and optional auto-deletion. Your content, yours alone."
       },
       {
-        "title": "AI-Generated Videos",
-        "description": "Transform your stories into animated hentai videos. High-quality visual generation with your exact scenes."
+        "title": "Results in Seconds",
+        "description": "Latest generation AI processes your images in record time. Professional quality without long waits."
+      },
+      {
+        "title": "Referral Program - Earn by Inviting Friends",
+        "description": "Invite your friends and both win: You receive 2 weeks of Premium free for each successful referral. Your friends get 15% off their first month. Share and enjoy together!"
       }
     ]
   },
@@ -89,24 +93,33 @@
     "selectStyle": "Select a style (max. 2)"
   },
   "showcase": {
-    "scrollHint": "Scroll to explore",
+    "title": "Creation Examples",
+    "subtitle": "Discover the infinite possibilities of artistic transformation",
+    "scrollHint": "Explore the styles",
     "scenarios": [
       {
-        "title": "The Strict Teacher",
-        "description": "After class, she asks you to stay. Her stern eyes hide burning desire. \"We need to talk about your... performance,\" she says while locking the door."
+        "title": "My Anime Crush Come to Life",
+        "description": "Maria transformed her favorite streamer into a 'Demon Slayer' style anime character. Now she has personalized art of him as if he were the protagonist of her favorite series. Do you have an influencer or friend you'd like to see in anime style?"
       },
       {
-        "title": "The Demon Queen",
-        "description": "You conquered the dark kingdom, but she conquered you. \"Kneel, hero,\" she commands with a wicked smile. \"Tonight, you serve me.\""
+        "title": "The Actor from the Series I Love",
+        "description": "Carlos created sensual art of his favorite actor from 'Money Heist' in an intimate scenario. He transformed screenshots into unique pieces that look like they're from an exclusive photoshoot. Which celebrity would you like to immortalize?"
       },
       {
-        "title": "The Lost Siren",
-        "description": "Under moonlight, she emerges from water. Drops shimmer on her skin as she gazes with hungry eyes. \"I've been waiting for you,\" she whispers. \"Come... the ocean keeps our secrets.\""
+        "title": "My University Professor",
+        "description": "Andrea imagined her charismatic literature professor in a romantic French movie-style scenario. She uploaded a campus photo and the AI created artwork worthy of a novel cover. Do you have a university crush?"
       },
       {
-        "title": "The Seductive Ninja",
-        "description": "She appears in your room like a shadow in the night. \"I was hired to eliminate you,\" she purrs, \"but I think I'll enjoy torturing you first.\" Her hands begin to untie her kimono."
-      }
+        "title": "My Friend as a Professional Model",
+        "description": "Diego surprised his best friend by transforming her casual photo into a glamorous Vogue-style portrait. The AI captured her essence but elevated to a high-impact photoshoot. Want to see someone special in maximum elegance?"
+      },
+      {
+        "title": "The Gamer I Admire as Epic Hero",
+        "description": "Luna converted her favorite Twitch streamer into an 'Elden Ring' warrior with full armor and legendary sword. From gameplay to epic video game art. Which gamer or friend would you see as an RPG protagonist?"
+      },
+      {
+        "title": "My Favorite Singer Pin-Up Style",
+        "description": "Robert transformed his favorite musical artist into a vintage 50s illustration, mixing their modern style with classic retro aesthetic. Unique art that doesn't exist anywhere else. Which musician or celebrity would you reimagine?"      }
     ]
   },
   "characterCarousel": {
@@ -115,22 +128,47 @@
   },
   "testimonials": {
     "title": "What Our Users Say",
-    "subtitle": "Thousands of creators are already living their fantasies",
+    "subtitle": "Real creators sharing their experiences",
     "items": [
       {
-        "text": "AnimaTales has allowed me to explore narratives I never imagined. The AI is incredibly immersive and privacy is real.",
-        "author": "Sarah M.",
+        "text": "Dude, I transformed my favorite Money Heist actor into an intimate scene and it came out INSANE. The quality is crazy, looks like a legit professional photo.",
+        "author": "Alex R.",
+        "role": "Series Fan"
+      },
+      {
+        "text": "Made art of my uni crush in anime style and WOW... showed it to them and they totally flipped. Now all my friends want me to make theirs lol.",
+        "author": "Diego S.",
+        "role": "College Student"
+      },
+      {
+        "text": "No way, I turned my fav streamer into an Elden Ring character and they posted it on their Instagram. This is next level, literally custom art in minutes.",
+        "author": "Luna G.",
+        "role": "Gamer"
+      },
+      {
+        "text": "I thought I was weird for fantasizing about my professor... turns out tons of people create art of their crushes too. Privacy is real and the results are 🔥",
+        "author": "Sofia M.",
+        "role": "Graphic Designer"
+      },
+      {
+        "text": "Been following this k-drama actress for years and now I have exclusive art of her that doesn't exist anywhere else. The available styles are INSANE.",
+        "author": "Carlos V.",
+        "role": "Art Collector"
+      },
+      {
+        "text": "My best friend's birthday came up and I gifted her a vintage pin-up style portrait of herself. She cried from emotion, she says it's the best gift ever.",
+        "author": "Andrea K.",
+        "role": "Photographer"
+      },
+      {
+        "text": "Honestly thought it'd be a scam but tried the free plan and within a week I had already paid for premium. Worth every penny if you're into custom art.",
+        "author": "Roberto L.",
+        "role": "Digital Artist"
+      },
+      {
+        "text": "Transformed photos of my partner into different artistic styles for our anniversary. The album I made went viral on TikTok with 2M views.",
+        "author": "Javier P.",
         "role": "Content Creator"
-      },
-      {
-        "text": "Finally a platform that understands what fans really want. No censorship, no limits. Perfect.",
-        "author": "James T.",
-        "role": "Anime Fan"
-      },
-      {
-        "text": "As a writer, this tool constantly inspires me. The infinite memory completely changes the game.",
-        "author": "Emma L.",
-        "role": "Writer"
       }
     ]
   },

@@ -68,33 +68,37 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
              style={{ animationDelay: '1s' }} />
       </div>
 
-      {/* Floating 3D Girls - Simulator Section */}
+      {/* Floating 3D Girls removed - starting from scratch */}
+
+      {/* Floating 3D characters - Simulator Section */}
+      {/* Top right - floating-3 */}
       <motion.div
-        className="hidden md:block absolute top-[5%] left-[1%] w-56 md:w-72 h-80 md:h-96 opacity-38 pointer-events-none"
+        className="absolute top-[8%] right-[5%] w-32 sm:w-44 md:w-64 h-44 sm:h-56 md:h-80 opacity-75 pointer-events-none z-10"
         animate={{
-          y: [0, -18, 0],
-          rotate: [-2, 1, -2],
+          y: [0, -15, 0],
+          rotate: [-1, 2, -1],
         }}
-        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
       >
         <Image
-          src="/images/floating-3d/floating-5.png"
+          src="/images/floating-3d/floating-3.png"
           alt="Floating character"
           fill
           className="object-contain"
         />
       </motion.div>
 
+      {/* Bottom left - floating-10 */}
       <motion.div
-        className="hidden md:block absolute top-[15%] right-[2%] w-60 md:w-76 h-[320px] md:h-[400px] opacity-42 pointer-events-none"
+        className="absolute bottom-[3%] left-[-5%] w-52 sm:w-64 md:w-96 h-64 sm:h-80 md:h-[500px] opacity-80 pointer-events-none z-10"
         animate={{
-          y: [0, 22, 0],
-          rotate: [3, -1, 3],
+          y: [0, -18, 0],
+          rotate: [2, -1, 2],
         }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
       >
         <Image
-          src="/images/floating-3d/floating-6.png"
+          src="/images/floating-3d/floating-10.png"
           alt="Floating character"
           fill
           className="object-contain"
@@ -115,7 +119,7 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
             <span className="text-sm text-neon-violet font-medium">Prueba el Generador IA</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gradient">
             {translations.title}
           </h2>
           <p className="text-xl text-gray-300">
@@ -130,7 +134,7 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
           viewport={{ once: true }}
           className="relative"
         >
-          <div className="p-8 md:p-12 rounded-3xl bg-gradient-to-br from-primary-darker to-primary-dark 
+          <div className="p-4 md:p-8 lg:p-12 rounded-3xl bg-gradient-to-br from-primary-darker to-primary-dark 
                         border border-neon-violet/30 shadow-2xl overflow-hidden">
             {/* Decorative elements */}
             <div className="absolute -top-20 -right-20 w-40 h-40 bg-neon-pink/20 rounded-full blur-3xl" />
@@ -171,13 +175,13 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
               </div>
 
               {/* Style selection */}
-              <div className="mb-8">
-                <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-                  <Sparkles className="w-5 h-5 text-neon-pink" />
+              <div className="mb-6 md:mb-8">
+                <h3 className="text-base md:text-lg font-semibold text-white mb-3 md:mb-4 flex items-center gap-2">
+                  <Sparkles className="w-4 h-4 md:w-5 md:h-5 text-neon-pink" />
                   {translations.selectStyle}
                 </h3>
                 
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3">
                   {translations.tags.map((tag, index) => {
                     const isSelected = selectedTags.includes(tag);
                     return (
@@ -187,7 +191,7 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
                         whileTap={{ scale: 0.95 }}
                         onClick={() => handleTagClick(tag)}
                         disabled={!uploadedImage}
-                        className={`px-4 py-3 rounded-xl font-medium transition-all duration-300
+                        className={`px-3 md:px-4 py-2 md:py-3 rounded-lg md:rounded-xl text-xs md:text-base font-medium transition-all duration-300
                                   ${isSelected 
                                     ? 'bg-neon-gradient text-white shadow-lg shadow-neon-pink/30' 
                                     : uploadedImage
