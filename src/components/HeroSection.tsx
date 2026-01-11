@@ -49,9 +49,9 @@ export default function HeroSection({ translations }: HeroSectionProps) {
            style={{ animationDelay: '1s' }} />
 
       <div className="container mx-auto max-w-7xl relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left side - Text content */}
-          <div className="space-y-8 lg:pr-12">
+        <div className="flex justify-center items-center">
+          {/* Text content */}
+          <div className="space-y-8 max-w-3xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -92,7 +92,7 @@ export default function HeroSection({ translations }: HeroSectionProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
-              className="text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-xl"
+              className="text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-xl mx-auto"
             >
               {translations.subtitle}
             </motion.p>
@@ -102,7 +102,7 @@ export default function HeroSection({ translations }: HeroSectionProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.8 }}
-              className="flex flex-col sm:flex-row gap-3 md:gap-4"
+              className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center"
             >
               <motion.button
                 whileHover={{ scale: 1.05 }}
@@ -141,7 +141,7 @@ export default function HeroSection({ translations }: HeroSectionProps) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 pt-4"
+              className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 pt-4"
             >
               <div className="flex items-center gap-2">
                 <Heart className="w-4 h-4 md:w-5 md:h-5 text-neon-pink fill-neon-pink" />
@@ -153,47 +153,6 @@ export default function HeroSection({ translations }: HeroSectionProps) {
               </div>
             </motion.div>
           </div>
-
-          {/* Right side - Decorative elements only */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.4, duration: 1 }}
-            className="relative h-[400px] md:h-[500px] lg:h-[700px]"
-          >
-            <div className="relative w-full h-full flex items-center justify-center">
-              {/* Decorative floating elements */}
-              <motion.div
-                animate={{ 
-                  y: [0, -20, 0],
-                  rotate: [0, 5, 0]
-                }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
-                className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-neon-pink/20 blur-xl"
-              />
-              
-              <motion.div
-                animate={{ 
-                  y: [0, 20, 0],
-                  rotate: [0, -5, 0]
-                }}
-                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -bottom-6 -left-6 w-32 h-32 rounded-full bg-neon-violet/20 blur-xl"
-              />
-
-              {/* Decorative border elements */}
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                className="absolute -top-10 -right-10 w-20 h-20 border-2 border-neon-violet/30 rounded-full"
-              />
-              <motion.div
-                animate={{ rotate: -360 }}
-                transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
-                className="absolute -bottom-10 -left-10 w-16 h-16 border-2 border-neon-pink/30 rounded-full"
-              />
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>
