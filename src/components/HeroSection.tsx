@@ -65,7 +65,7 @@ export default function HeroSection({ translations }: HeroSectionProps) {
                          border border-neon-violet/30 mb-6"
               >
                 <Sparkles className="w-4 h-4 text-neon-violet" />
-                <span className="text-sm text-neon-violet font-medium">Impulsado por IA Avanzada</span>
+                <span className="text-sm text-neon-violet font-medium">Fantasías → Realidad en 30 segundos</span>
               </motion.div>
 
               <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold leading-tight mb-4 md:mb-6">

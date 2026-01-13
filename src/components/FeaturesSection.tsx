@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Brain, Unlock, Shield, Film, Users } from 'lucide-react';
+import { Brain, Unlock, Shield, Film, Users, Gift } from 'lucide-react';
 import Image from 'next/image';
 
 interface FeaturesSectionProps {
@@ -17,7 +17,7 @@ interface FeaturesSectionProps {
   };
 }
 
-const icons = [Brain, Unlock, Shield, Film, Users];
+const icons = [Brain, Unlock, Shield, Film, Users, Gift];
 
 export default function FeaturesSection({ translations }: FeaturesSectionProps) {
   return (

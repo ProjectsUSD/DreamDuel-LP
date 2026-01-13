@@ -46,7 +46,7 @@ export default function Footer({ translations }: FooterProps) {
               <div className="w-10 h-10 rounded-lg bg-neon-gradient flex items-center justify-center">
                 <Heart className="w-6 h-6 text-white fill-white" />
               </div>
-              <span className="text-2xl font-bold text-gradient">AnimaTales</span>
+              <span className="text-2xl font-bold text-gradient">DreamDuel</span>
             </div>
             <p className="text-gray-400 mb-4 leading-relaxed">
               {translations.tagline}
@@ -111,7 +111,7 @@ export default function Footer({ translations }: FooterProps) {
 
             <div className="flex items-center gap-2 text-sm text-gray-400 p-3 rounded-lg bg-white/5 border border-white/10">
               <Mail className="w-4 h-4 text-neon-violet" />
-              <span>support@animatales.com</span>
+              <span>support@dreamduel.com</span>
             </div>
           </motion.div>
         </div>
@@ -131,7 +131,7 @@ export default function Footer({ translations }: FooterProps) {
             
             <div className="flex items-center gap-6 text-sm text-gray-500">
               <span className="flex items-center gap-2">
-                Made with <Heart className="w-4 h-4 text-neon-pink fill-neon-pink" /> by AnimaTales Team
+                Made with <Heart className="w-4 h-4 text-neon-pink fill-neon-pink" /> by DreamDuel Team
               </span>
             </div>
           </div>

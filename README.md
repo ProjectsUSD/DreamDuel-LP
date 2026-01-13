@@ -1,6 +1,6 @@
-# AnimaTales - Landing Page 🌸✨
+# DreamDuel - Landing Page 🌙✨
 
-Landing page inmersiva y elegante para **AnimaTales**, un generador de historias interactivas (roleplay) basado en IA con estética anime y libertad narrativa total.
+Landing page inmersiva y elegante para **DreamDuel**, una app que convierte fantasías humanas simples en historias visuales tangibles con IA, usando inputs mínimos para máxima facilidad.
 
 ## 🚀 Stack Tecnológico
 
@@ -218,6 +218,6 @@ Este proyecto es privado y está destinado únicamente para uso personal o educa
 
 ---
 
-**Desarrollado con ❤️ por AnimaTales Team**
+**Desarrollado con ❤️ por DreamDuel Team**
 
-🌸 *Donde tus fantasías cobran vida* ✨
+🌙 *Donde tus fantasías se vuelven tangibles* ✨

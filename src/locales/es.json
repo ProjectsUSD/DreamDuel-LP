@@ -1,48 +1,52 @@
 {
   "hero": {
-    "title": "Tus Historias, Tu Imaginación, Tu Realidad",
-    "subtitle": "Crea historias visuales interactivas con IA. Escribe lo que imaginas y observa cómo cobra vida con imágenes generadas automáticamente.",
-    "cta": "Crear Mi Historia Gratis",
-    "ctaSecondary": "Ver Historias Creadas ✨"
+    "title": "Tus Fantasías, Realidad Tangible",
+    "subtitle": "Convierte fantasías simples en historias visuales con IA. Solo describe personas, temática y contexto - la IA crea el resto en 30 segundos.",
+    "cta": "Crear Mi Fantasía Gratis",
+    "ctaSecondary": "Ver Fantasías Creadas ✨"
   },
   "ageVerification": {
     "title": "Verificación de Edad",
-    "message": "Este sitio contiene contenido creativo generado por IA. Algunos usuarios crean historias para audiencias adultas. Debes ser mayor de 18 años para continuar.",
+    "message": "DreamDuel materializa fantasías intensas y personales con contenido para adultos. Algunos escenarios incluyen temáticas de venganza, lujuria y poder sin censura. Debes ser mayor de 18 años para continuar.",
     "confirm": "Soy mayor de 18 años",
     "decline": "Salir",
-    "disclaimer": "Al continuar, confirmas que eres mayor de edad en tu jurisdicción."
+    "disclaimer": "Al continuar, confirmas que eres mayor de edad en tu jurisdicción y aceptas contenido NSFW."
   },
   "features": {
-    "title": "Crea Historias Visuales con IA Avanzada",
-    "subtitle": "Diseñado para creadores que buscan dar vida a sus ideas con imágenes y narrativa",
+    "title": "Convierte Fantasías en Realidad con IA",
+    "subtitle": "Inputs mínimos para máxima facilidad - Escenarios intensos personales",
     "cta": "Comenzar Ahora",
-    "ctaQuestion": "¿Listo para crear tu primera historia?",
+    "ctaQuestion": "¿Listo para materializar tu primera fantasía?",
     "items": [
       {
-        "title": "Generación Conversacional de Historias",
-        "description": "Escribe tu historia como si hablaras con un asistente. La IA genera automáticamente imágenes coherentes para cada escena que describes."
+        "title": "Sin Prompts Complejos",
+        "description": "Solo ingresa: personas (Ana, Pedro), temática (venganza, lujuria, romance) y contexto (oficina). La IA automáticamente expande a historia completa con escenas, personajes detallados y diálogos emocionales."
       },
       {
-        "title": "Creación de Imágenes Sin Límites",
-        "description": "Genera cualquier imagen que imagines sin restricciones. Libertad creativa total para dar vida a tus personajes y escenarios. Ideal para contenido creativo de todo tipo."
+        "title": "Generación Visual Inmediata",
+        "description": "Cada escena incluye imágenes consistentes y animaciones sutiles. De fantasía imaginada a 5-10 paneles visuales con personajes coherentes en 30 segundos. Contenido sin censura para adultos."
       },
       {
-        "title": "Privacidad Garantizada",
-        "description": "Tus creaciones son privadas. Encriptación de extremo a extremo y control total sobre tu contenido. Solo tú decides qué compartir."
+        "title": "Privacidad Total Garantizada",
+        "description": "Tus fantasías más íntimas permanecen privadas. Encriptación de extremo a extremo y control absoluto sobre tu contenido. Nadie más ve tus creaciones a menos que tú decidas compartir."
       },
       {
-        "title": "Galería de Historias Inspiradoras",
-        "description": "Explora historias creadas por otros usuarios. Inspírate en narrativas únicas y descubre nuevas formas de contar historias visuales."
+        "title": "Personalización con Nombres Reales",
+        "description": "Usa nombres de personas reales o avatares personalizados para máxima inmersión. Fantasías oscuras e íntimas: venganza, lujuria, poder. Todo lo que imagines, hecho tangible."
       },
       {
-        "title": "Programa de Referidos - Gana Invitando Amigos",
-        "description": "Invita a tus amigos y ambos ganan: Tú recibes 2 semanas gratis de Premium por cada invitación exitosa. Tus amigos obtienen 15% de descuento en su primer mes. ¡Comparte y disfruta juntos!"
+        "title": "Exporta y Comparte",
+        "description": "Descarga en PDF, video corto o historia interactiva. Ajustes rápidos con botones: 'más intensa', 'estilo anime', 'cambiar personaje'. Preview interactivo antes de exportar."
+      },
+      {
+        "title": "Gana Premium Compartiendo",
+        "description": "Invita a un amigo y ambos ganan: tú recibes 2 semanas de Premium gratis por cada referido exitoso. Tu amigo obtiene 15% de descuento en su primera suscripción. Comparte fantasías, multiplica beneficios."
       }
     ]
   },
   "pricing": {
-    "title": "Elige tu Aventura",
-    "subtitle": "Comienza gratis y expande tus posibilidades",
+    "title": "Elige tu Plan de Fantasías",
+    "subtitle": "Comienza gratis y desbloquea escenarios ilimitados",
     "guarantee": "¿Tienes dudas? Todos los planes incluyen garantía de 7 días",
     "free": {
       "name": "Free",
@@ -50,10 +54,10 @@
       "currency": "€",
       "period": "/mes",
       "features": [
-        "50 generaciones de imágenes/mes",
-        "Historias básicas con texto e imágenes",
+        "3 fantasías/mes",
+        "Contenido suave",
         "5 escenas por historia",
-        "Historias guardadas ilimitadas",
+        "Personajes básicos",
         "Soporte por email"
       ],
       "cta": "Comenzar Gratis"
@@ -65,62 +69,62 @@
       "period": "/mes",
       "popular": "Más Popular",
       "features": [
-        "Generación ilimitada de imágenes",
-        "Historias ilimitadas con escenas completas",
-        "Libertad creativa total en tus historias",
-        "Exportación de historias en formato PDF/eBook",
-        "Memoria extendida (contexto 32K)",
+        "Fantasías ilimitadas",
+        "NSFW completo sin censura",
+        "8-10 escenas por historia",
+        "Exportación a video corto",
+        "Personajes guardados con nombres reales",
+        "Ajustes rápidos ('más intensa', 'estilo anime')",
         "Soporte prioritario 24/7",
-        "Acceso anticipado a nuevas funciones",
-        "Exportación en HD sin marca de agua"
+        "Preview interactivo avanzado"
       ],
       "cta": "Desbloquear Premium"
     }
   },
   "characters": {
-    "title": "Conoce a Tus Compañeras",
-    "types": ["Tsundere 💕", "Dominante 🔥", "Tímida 😳", "Misteriosa 🌙", "Aventurera ⚡", "Intelectual 📚", "Rebelde 😈", "Elegante 👑"]
+    "title": "Arquetipos para tus Fantasías",
+    "types": ["Venganza 🔥", "Lujuria 💋", "Poder 👑", "Romance 🌹", "Oscuro 🌙", "Intenso ⚡", "Dominante 💎", "Misterioso 🔮"]
   },
   "simulator": {
-    "title": "Generador de Historias Interactivas",
-    "subtitle": "Escribe tu historia y observa cómo la IA genera imágenes automáticamente",
-    "placeholder": "Escribe tu historia aquí... Ejemplo: 'Un caballero valiente se encuentra con un dragón en las montañas nevadas'",
-    "generate": "Generar Imagen ✨",
-    "result": "Tu creación: ",
-    "continueStory": "Continuar Historia 📖",
-    "generateAnother": "Nueva Historia ✨",
-    "inputLabel": "Describe tu escena",
-    "generating": "Generando imagen...",
-    "chatMode": "Modo Conversacional"
+    "title": "Generador de Fantasías Instantáneo",
+    "subtitle": "Input simple → Fantasía tangible. Solo describe personas, temática y contexto",
+    "placeholder": "Ejemplo simple: 'Ana, jefe, lujuria, oficina' o 'Carlos, venganza, hotel'",
+    "generate": "Generar Fantasía ✨",
+    "result": "Tu fantasía: ",
+    "continueStory": "Más Intensa 🔥",
+    "generateAnother": "Nueva Fantasía ✨",
+    "inputLabel": "Describe tu fantasía (personas, temática, contexto)",
+    "generating": "Creando tu realidad...",
+    "chatMode": "Modo Rápido"
   },
   "showcase": {
-    "title": "Ejemplos de Creaciones",
-    "subtitle": "Descubre las posibilidades infinitas de transformación artística",
-    "scrollHint": "Explora los estilos",
+    "title": "Ejemplos de Fantasías Materializadas",
+    "subtitle": "Descubre cómo otros han convertido sus escenarios intensos en realidad",
+    "scrollHint": "Explora las posibilidades",
     "scenarios": [
       {
-        "title": "Mi Crush del Anime Hecho Realidad",
-        "description": "María transformó a su streamer favorito en un personaje de anime estilo 'Demon Slayer'. Ahora tiene arte personalizado de él como si fuera protagonista de su serie preferida. ¿Tienes un influencer o amigo que te gustaría ver en estilo anime?"
+        "title": "Venganza Corporativa",
+        "description": "María ingresó: 'yo, ex-jefe, venganza sexual, ascenso corporativo'. DREAMDUEL generó 8 paneles donde seduce y domina a su antiguo jefe, estilo anime oscuro con diálogos cargados de tensión sexual y poder. ¿Quién es tu objetivo de venganza?"
       },
       {
-        "title": "El Actor de la Serie que Amo",
-        "description": "Carlos creó arte sensual de su actor favorito de 'La Casa de Papel' en un escenario íntimo. Transformó capturas de pantalla en obras únicas que parecen sacadas de una sesión fotográfica exclusiva. ¿Qué celebridad te gustaría inmortalizar?"
+        "title": "Lujuria en la Oficina",
+        "description": "Carlos creó: 'Ana, Pedro, lujuria, sala de juntas'. En 30 segundos obtuvo una historia de 6 escenas con imágenes consistentes y animaciones sutiles. Fantasía que imaginó, ahora tangible. ¿Qué escenario imaginas?"
       },
       {
-        "title": "Mi Profesor(a) de Universidad",
-        "description": "Andrea imaginó a su carismático profesor de literatura en un escenario romántico estilo película francesa. Subió una foto del campus y la IA creó una obra artística digna de portada de novela. ¿Tienes un crush universitario?"
+        "title": "Poder y Seducción",
+        "description": "Laura transformó su fantasía: 'jefe, compañera, dominación, poder corporativo'. La IA expandió automáticamente a historia completa con personajes detallados. Sin prompts complejos, solo personas + temática + contexto."
       },
       {
-        "title": "Mi Amiga como Modelo Profesional",
-        "description": "Diego sorprendió a su mejor amiga transformando su foto casual en un retrato glamuroso estilo Vogue. La IA capturó su esencia pero elevada a sesión fotográfica de alto impacto. ¿Quieres ver a alguien especial en máxima elegancia?"
+        "title": "Romance Oscuro",
+        "description": "Diego simplemente escribió: 'vecina, profesor, romance oscuro, barrio nocturno'. DREAMDUEL creó cómic de 10 paneles con narrativa emocional profunda. Usa nombres reales o ficticios para máxima inmersión."
       },
       {
-        "title": "El Gamer que Admiro como Héroe Épico",
-        "description": "Luna convirtió a su streamer favorito de Twitch en un guerrero de 'Elden Ring' con armadura completa y espada legendaria. De gameplay a arte épico de videojuego. ¿Qué gamer o amigo verías como protagonista de RPG?"
+        "title": "Fantasía Prohibida",
+        "description": "Sofía materializó lo inimaginable: 'expareja, amigo cercano, venganza lujuriosa, reunión'. Exportó como video corto con ajustes rápidos ('más intensa', 'estilo realista'). Todo lo que imaginas, sin censura."
       },
       {
-        "title": "Mi Cantante Favorito Estilo Pin-Up",
-        "description": "Roberto transformó a su artista musical preferido en una ilustración vintage años 50, mezclando su estilo moderno con estética retro clásica. Arte único que no existe en ningún otro lugar. ¿Qué músico o celebridad reimaginarías?"
+        "title": "Escenario Intenso Personalizado",
+        "description": "Roberto usó: 'compañero trabajo, amiga universidad, lujuria, viaje negocios'. Preview interactivo le permitió ajustar detalles antes de generar. Contenido NSFW completo en plan Premium. ¿Listo para tu fantasía?"
       }
     ]
   },
@@ -130,55 +134,55 @@
   },
   "testimonials": {
     "title": "Lo que Dicen Nuestros Usuarios",
-    "subtitle": "Creadores reales compartiendo sus experiencias",
+    "subtitle": "Creadores reales materializando sus fantasías",
     "items": [
       {
-        "text": "Bro, transformé a mi actor favorito de La Casa de Papel en una escena íntima y quedó BRUTAL. La calidad es una locura, parece foto profesional posta.",
+        "text": "Escribí 'mi jefa, yo, venganza sexual, oficina' y en 30 segundos tenía 8 escenas BRUTALES. La calidad es insana, parece cómic profesional posta.",
         "author": "Alex R.",
-        "role": "Fan de Series"
+        "role": "Usuario Premium"
       },
       {
-        "text": "Hice arte de mi crush de la uni en estilo anime y WOW... se lo mostré y flipó totalmente. Ahora todos mis compas me piden que les haga el suyo jaja.",
+        "text": "No necesité escribir prompts complicados. Solo nombres + temática + lugar y la IA hizo TODO. Exporté a video y quedó perfecto.",
         "author": "Diego S.",
-        "role": "Estudiante Universitario"
+        "role": "Creador de Contenido"
       },
       {
-        "text": "No mames, convertí a mi streamer fav en personaje de Elden Ring y lo subió a su Instagram. Esto es otro level, literal arte personalizado en minutos.",
+        "text": "Materialícé una fantasía que tenía años en mi cabeza. DREAMDUEL la hizo realidad tangible con personajes consistentes y diálogos intensos. Esto es otro level.",
         "author": "Luna G.",
-        "role": "Gamer"
+        "role": "Artista Digital"
       },
       {
-        "text": "Yo que pensaba que era raro fantasear con mi profesor... resulta que un montón de gente crea arte de sus crushes también. La privacidad es real y el resultado es 🔥",
+        "text": "Pensaba que era raro tener estas fantasías... turns out un montón de gente las materializa aquí. La privacidad es real y el contenido NSFW sin censura 🔥",
         "author": "Sofia M.",
-        "role": "Diseñadora Gráfica"
+        "role": "Diseñadora"
       },
       {
-        "text": "Llevo años siguiendo a esta actriz de k-dramas y ahora tengo arte exclusivo de ella que no existe en ningún lado. Los estilos disponibles están INSANOS.",
+        "text": "'María, Pedro, lujuria, sala juntas' → historia completa en segundos. Los ajustes rápidos ('más intensa', 'estilo anime') son geniales.",
         "author": "Carlos V.",
-        "role": "Coleccionista de Arte"
+        "role": "Escritor"
       },
       {
-        "text": "Mi mejor amiga cumplió años y le regalé un retrato de ella estilo pin-up vintage. Lloró de la emoción, es el mejor regalo que le han dado dice.",
+        "text": "Usé nombres reales de conocidos y la inmersión es MÁXIMA. Obviamente todo privado. Vale cada centavo del Premium.",
         "author": "Andrea K.",
         "role": "Fotógrafa"
       },
       {
-        "text": "Honestamente pensé que sería una estafa pero probé el plan gratis y a la semana ya había pagado premium. Vale cada centavo si te gusta el arte personalizado.",
+        "text": "Probé el plan Free (3 fantasías/mes) y a la semana ya había pagado Premium. Escenarios ilimitados + NSFW completo = worth it.",
         "author": "Roberto L.",
-        "role": "Artista Digital"
+        "role": "Usuario Premium"
       },
       {
-        "text": "Transformé fotos de mi pareja en diferentes estilos artísticos para nuestro aniversario. El álbum que armé se volvió viral en TikTok con 2M de vistas.",
+        "text": "Input simple, output increíble. De fantasía en mi mente a 10 paneles visuales en 30 segundos. La IA expande todo automáticamente.",
         "author": "Javier P.",
-        "role": "Creador de Contenido"
+        "role": "Beta Tester"
       }
     ]
   },
   "footer": {
-    "tagline": "Donde tus fantasías cobran vida",
+    "tagline": "Donde tus fantasías se vuelven tangibles",
     "privacy": "Privacidad",
     "terms": "Términos",
     "contact": "Contacto",
-    "copyright": "© 2025 AnimaTales. Todos los derechos reservados."
+    "copyright": "© 2025 DreamDuel. Todos los derechos reservados."
   }
 }

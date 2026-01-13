@@ -4,10 +4,10 @@ import '../globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AnimaTales - Tus Fantasías, Tu Realidad',
-  description: 'Crea historias inmersivas con tus personajes de anime favoritos impulsados por IA sin censura.',
-  keywords: 'anime, AI, roleplay, historias interactivas, IA generativa, NSFW',
-  authors: [{ name: 'AnimaTales' }],
+  title: 'DreamDuel - Tus Fantasías, Realidad Tangible',
+  description: 'Convierte fantasías simples en historias visuales con IA. Solo describe personas, temática y contexto - la IA crea el resto en 30 segundos. Escenarios intensos personales sin censura.',
+  keywords: 'fantasías, AI, historias visuales, IA generativa, NSFW, escenarios intensos, venganza, lujuria, romance oscuro',
+  authors: [{ name: 'DreamDuel' }],
   robots: 'noindex, nofollow', // Importante para contenido adulto
 };
 

@@ -25,6 +25,7 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
   const [generatedImage, setGeneratedImage] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
   const [currentPrompt, setCurrentPrompt] = useState('');
+  const [error, setError] = useState<string | null>(null);
 
   // Ejemplos de imágenes generadas (placeholder hasta conectar backend)
   const placeholderImages = [
@@ -34,6 +35,10 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
     '/images/floating-3d/floating-5.png',
   ];
 
+  // Configuración: cambiar a true cuando el backend esté listo
+  const USE_REAL_API = process.env.NEXT_PUBLIC_USE_REAL_API === 'true';
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || '/api/generate-fantasy';
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!inputText.trim() || isGenerating) return;
@@ -41,28 +46,68 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
     setCurrentPrompt(inputText);
     setIsGenerating(true);
     setGeneratedImage(null);
+    setError(null);
 
-    // Simular llamada a API (aquí conectarás tu backend)
-    setTimeout(() => {
-      const randomImage = placeholderImages[Math.floor(Math.random() * placeholderImages.length)];
-      setGeneratedImage(randomImage);
+    try {
+      if (USE_REAL_API) {
+        // ===== MODO PRODUCCIÓN: Llamada real al backend =====
+        const response = await fetch(API_URL, {
+          method: 'POST',
+          headers: { 
+            'Content-Type': 'application/json',
+            // Agregar headers adicionales si es necesario (ej: Authorization)
+            // 'Authorization': `Bearer ${token}`,
+          },
+          body: JSON.stringify({ 
+            prompt: inputText,
+            // Puedes agregar más parámetros según tu API:
+            // userId: user?.id,
+            // style: 'anime',
+            // nsfw: true,
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error(`Error ${response.status}: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        
+        // Ajusta según la estructura de respuesta de tu API:
+        // Opción 1: Si devuelve { imageUrl: "https://..." }
+        setGeneratedImage(data.imageUrl || data.image || data.url);
+        
+        // Opción 2: Si devuelve array de escenas { scenes: [{imageUrl: "..."}, ...] }
+        // setGeneratedImage(data.scenes?.[0]?.imageUrl);
+        
+        // Opción 3: Si devuelve base64
+        // setGeneratedImage(`data:image/png;base64,${data.imageBase64}`);
+        
+      } else {
+        // ===== MODO DEMO: Simulación con imágenes placeholder =====
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        const randomImage = placeholderImages[Math.floor(Math.random() * placeholderImages.length)];
+        setGeneratedImage(randomImage);
+      }
+    } catch (err) {
+      console.error('Error generating fantasy:', err);
+      setError(err instanceof Error ? err.message : 'Error al generar la fantasía. Intenta nuevamente.');
+      
+      // En caso de error, mostrar imagen placeholder en demo
+      if (!USE_REAL_API) {
+        const randomImage = placeholderImages[Math.floor(Math.random() * placeholderImages.length)];
+        setGeneratedImage(randomImage);
+      }
+    } finally {
       setIsGenerating(false);
-    }, 2000);
-
-    // TODO: Reemplazar con llamada real a tu backend
-    // const response = await fetch('/api/generate-image', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify({ prompt: inputText }),
-    // });
-    // const data = await response.json();
-    // setGeneratedImage(data.imageUrl);
+    }
   };
 
   const handleNewGeneration = () => {
     setGeneratedImage(null);
     setInputText('');
     setCurrentPrompt('');
+    setError(null);
   };
 
   return (
@@ -193,6 +238,17 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
                   </motion.button>
                 </div>
               </form>
+
+              {/* Error Display */}
+              {error && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="mb-4 p-4 bg-red-500/10 border border-red-500/30 rounded-xl"
+                >
+                  <p className="text-red-400 text-sm">{error}</p>
+                </motion.div>
+              )}
 
               {/* Generated Image Display */}
               <AnimatePresence mode="wait">
