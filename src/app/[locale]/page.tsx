@@ -12,6 +12,7 @@ import LanguageSwitcher from '@/components/LanguageSwitcher';
 import ScrollToTop from '@/components/ScrollToTop';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import FloatingCharacters from '@/components/FloatingCharacters';
+import WaitlistSection from '@/components/WaitlistSection';
 
 export default function Home() {
   const t = useTranslations();
@@ -80,6 +81,24 @@ export default function Home() {
           title: t('testimonials.title'),
           subtitle: t('testimonials.subtitle'),
           items: t.raw('testimonials.items'),
+        }}
+      />
+
+      {/* Waitlist Section */}
+      <WaitlistSection 
+        translations={{
+          badge: t('waitlist.badge'),
+          title: t('waitlist.title'),
+          subtitle: t('waitlist.subtitle'),
+          emailPlaceholder: t('waitlist.emailPlaceholder'),
+          ctaButton: t('waitlist.ctaButton'),
+          successTitle: t('waitlist.successTitle'),
+          successMessage: t('waitlist.successMessage'),
+          loading: t('waitlist.loading'),
+          stats: {
+            users: t('waitlist.stats.users'),
+            waitTime: t('waitlist.stats.waitTime'),
+          },
         }}
       />
 

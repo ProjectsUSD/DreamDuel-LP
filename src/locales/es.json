@@ -85,6 +85,20 @@
     "title": "Arquetipos para tus Fantasías",
     "types": ["Venganza 🔥", "Lujuria 💋", "Poder 👑", "Romance 🌹", "Oscuro 🌙", "Intenso ⚡", "Dominante 💎", "Misterioso 🔮"]
   },
+  "waitlist": {
+    "badge": "Lanzamiento Próximo",
+    "title": "Sé de los Primeros en Materializar tus Fantasías",
+    "subtitle": "Únete a la lista de espera y obtén acceso anticipado a DreamDuel. Los primeros 1000 usuarios tendrán Premium gratis por 3 meses.",
+    "emailPlaceholder": "tu@email.com",
+    "ctaButton": "Unirme a la Waitlist",
+    "successTitle": "¡Bienvenido a la Waitlist! 🎉",
+    "successMessage": "Te enviaremos un email cuando estemos listos. Prepárate para convertir tus fantasías en realidad.",
+    "loading": "Guardando...",
+    "stats": {
+      "users": "2,547+ en lista",
+      "waitTime": "Lanzamiento Feb 2026"
+    }
+  },
   "simulator": {
     "title": "Generador de Fantasías Instantáneo",
     "subtitle": "Input simple → Fantasía tangible. Solo describe personas, temática y contexto",
