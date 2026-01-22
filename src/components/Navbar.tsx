@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
+import LanguageSwitcher from './LanguageSwitcher';
 
 interface NavbarProps {
   translations: {
@@ -84,6 +85,8 @@ export default function Navbar({ translations }: NavbarProps) {
               </motion.a>
             ))}
             
+            <LanguageSwitcher />
+            
             <motion.a
               href="#waitlist"
               onClick={(e) => {
@@ -129,6 +132,9 @@ export default function Navbar({ translations }: NavbarProps) {
                 {item.name}
               </a>
             ))}
+            <div className="py-2">
+              <LanguageSwitcher />
+            </div>
             <a
               href="#waitlist"
               onClick={(e) => {

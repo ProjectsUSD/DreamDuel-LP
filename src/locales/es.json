@@ -8,6 +8,7 @@
     "waitlist": "Waitlist"
   },
   "hero": {
+    "badge": "Fantasías → Realidad en 30 segundos",
     "title": "Tus Fantasías, Realidad Tangible",
     "subtitle": "Convierte fantasías simples en historias visuales con IA. Solo describe personas, temática y contexto - la IA crea el resto en 30 segundos.",
     "cta": "Crear Mi Fantasía Gratis",
@@ -108,6 +109,7 @@
     }
   },
   "simulator": {
+    "badge": "Generador de Fantasías",
     "title": "Generador de Fantasías Instantáneo",
     "subtitle": "Input simple → Fantasía tangible. Solo describe personas, temática y contexto",
     "placeholder": "Ejemplo simple: 'Ana, jefe, lujuria, oficina' o 'Carlos, venganza, hotel'",

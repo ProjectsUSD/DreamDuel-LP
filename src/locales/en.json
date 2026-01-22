@@ -8,6 +8,7 @@
     "waitlist": "Waitlist"
   },
   "hero": {
+    "badge": "Fantasies → Reality in 30 seconds",
     "title": "Your Fantasies, Tangible Reality",
     "subtitle": "Turn simple fantasies into visual stories with AI. Just describe people, theme, and context - AI creates the rest in 30 seconds.",
     "cta": "Create My Fantasy Free",
@@ -108,6 +109,7 @@
     }
   },
   "simulator": {
+    "badge": "Fantasy Generator",
     "title": "Instant Fantasy Generator",
     "subtitle": "Simple input → Tangible fantasy. Just describe people, theme and context",
     "placeholder": "Simple example: 'Ana, boss, lust, office' or 'Carlos, revenge, hotel'",

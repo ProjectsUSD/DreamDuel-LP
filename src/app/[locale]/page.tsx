@@ -8,7 +8,6 @@ import LiveSimulator from '@/components/LiveSimulator';
 import PricingSection from '@/components/PricingSection';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
-import LanguageSwitcher from '@/components/LanguageSwitcher';
 import ScrollToTop from '@/components/ScrollToTop';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import FloatingCharacters from '@/components/FloatingCharacters';
@@ -44,6 +43,7 @@ export default function Home() {
       <section id="inicio" className="pt-20">
         <HeroSection 
         translations={{
+          badge: t('hero.badge'),
           title: t('hero.title'),
           subtitle: t('hero.subtitle'),
           cta: t('hero.cta'),
@@ -55,6 +55,7 @@ export default function Home() {
       {/* Live Simulator */}
       <LiveSimulator 
         translations={{
+          badge: t('simulator.badge'),
           title: t('simulator.title'),
           subtitle: t('simulator.subtitle'),
           placeholder: t('simulator.placeholder'),
@@ -139,7 +140,6 @@ export default function Home() {
       />
 
       {/* Floating Components */}
-      <LanguageSwitcher />
       <ScrollToTop />
     </main>
   );
