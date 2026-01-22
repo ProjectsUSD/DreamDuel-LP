@@ -9,22 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        'bg-deep': '#000A0F',
+        'bg-card': '#1A2332',
         primary: {
-          dark: '#0f0f12',
-          darker: '#08080a',
+          DEFAULT: '#0099FF',
+          glow: '#4FC3F7',
         },
-        neon: {
-          pink: '#ff006e',
-          violet: '#b794f6',
-          crimson: '#e63946',
-          magenta: '#ff0a78',
-          purple: '#c77dff',
-        },
-        accent: {
-          purple: '#d946ef',
-          blue: '#818cf8',
-          red: '#fb5607',
-        }
+        'accent-hot': '#FF6E40',
+        'text-main': '#FFFFFF',
+        'text-muted': '#B3B3B3',
       },
       fontFamily: {
         sans: ['Outfit', 'Nunito', 'Inter', 'system-ui', 'sans-serif'],
@@ -32,9 +25,8 @@ const config: Config = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'neon-gradient': 'linear-gradient(135deg, #ff006e 0%, #b794f6 50%, #c77dff 100%)',
-        'purple-gradient': 'linear-gradient(135deg, #d946ef 0%, #818cf8 100%)',
-        'erotic-gradient': 'linear-gradient(135deg, #ff0a78 0%, #e63946 50%, #c77dff 100%)',
+        'primary-gradient': 'linear-gradient(135deg, #0099FF 0%, #4FC3F7 100%)',
+        'hero-gradient': 'linear-gradient(to bottom, #000A0F 0%, #1A2332 100%)',
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

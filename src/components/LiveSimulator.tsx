@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sparkles, Wand2, ImageIcon } from 'lucide-react';
+import { Sparkles, Upload, ImageIcon, X } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -21,10 +21,9 @@ interface LiveSimulatorProps {
 }
 
 export default function LiveSimulator({ translations }: LiveSimulatorProps) {
-  const [inputText, setInputText] = useState('');
-  const [generatedImage, setGeneratedImage] = useState<string | null>(null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [generatedStory, setGeneratedStory] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
-  const [currentPrompt, setCurrentPrompt] = useState('');
   const [error, setError] = useState<string | null>(null);
 
   // Ejemplos de imágenes generadas (placeholder hasta conectar backend)
@@ -39,13 +38,24 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
   const USE_REAL_API = process.env.NEXT_PUBLIC_USE_REAL_API === 'true';
   const API_URL = process.env.NEXT_PUBLIC_API_URL || '/api/generate-fantasy';
 
+  const handleImageSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setSelectedImage(reader.result as string);
+        setError(null);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!inputText.trim() || isGenerating) return;
+    if (!selectedImage || isGenerating) return;
 
-    setCurrentPrompt(inputText);
     setIsGenerating(true);
-    setGeneratedImage(null);
+    setGeneratedStory(null);
     setError(null);
 
     try {
@@ -55,15 +65,10 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
           method: 'POST',
           headers: { 
             'Content-Type': 'application/json',
-            // Agregar headers adicionales si es necesario (ej: Authorization)
-            // 'Authorization': `Bearer ${token}`,
           },
           body: JSON.stringify({ 
-            prompt: inputText,
-            // Puedes agregar más parámetros según tu API:
-            // userId: user?.id,
-            // style: 'anime',
-            // nsfw: true,
+            image: selectedImage,
+            // Puedes agregar más parámetros según tu API
           }),
         });
 
@@ -72,22 +77,13 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
         }
 
         const data = await response.json();
-        
-        // Ajusta según la estructura de respuesta de tu API:
-        // Opción 1: Si devuelve { imageUrl: "https://..." }
-        setGeneratedImage(data.imageUrl || data.image || data.url);
-        
-        // Opción 2: Si devuelve array de escenas { scenes: [{imageUrl: "..."}, ...] }
-        // setGeneratedImage(data.scenes?.[0]?.imageUrl);
-        
-        // Opción 3: Si devuelve base64
-        // setGeneratedImage(`data:image/png;base64,${data.imageBase64}`);
+        setGeneratedStory(data.imageUrl || data.image || data.url);
         
       } else {
         // ===== MODO DEMO: Simulación con imágenes placeholder =====
         await new Promise(resolve => setTimeout(resolve, 2000));
         const randomImage = placeholderImages[Math.floor(Math.random() * placeholderImages.length)];
-        setGeneratedImage(randomImage);
+        setGeneratedStory(randomImage);
       }
     } catch (err) {
       console.error('Error generating fantasy:', err);
@@ -96,7 +92,7 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
       // En caso de error, mostrar imagen placeholder en demo
       if (!USE_REAL_API) {
         const randomImage = placeholderImages[Math.floor(Math.random() * placeholderImages.length)];
-        setGeneratedImage(randomImage);
+        setGeneratedStory(randomImage);
       }
     } finally {
       setIsGenerating(false);
@@ -104,18 +100,17 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
   };
 
   const handleNewGeneration = () => {
-    setGeneratedImage(null);
-    setInputText('');
-    setCurrentPrompt('');
+    setGeneratedStory(null);
+    setSelectedImage(null);
     setError(null);
   };
 
   return (
-    <section className="py-20 px-4 relative overflow-hidden">
-      {/* Animated background */}
+    <section id="generador" className="py-20 px-4 relative overflow-hidden bg-bg-card">
+      {/* Background effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-neon-pink/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/3 w-64 h-64 bg-neon-violet/20 rounded-full blur-3xl animate-pulse" 
+        <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/3 w-64 h-64 bg-primary-glow/10 rounded-full blur-3xl" 
              style={{ animationDelay: '1s' }} />
       </div>
 
@@ -162,62 +157,101 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neon-violet/10 
-                       border border-neon-violet/30 mb-4">
-            <ImageIcon className="w-4 h-4 text-neon-violet" />
-            <span className="text-sm text-neon-violet font-medium">Generador de Imágenes</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 
+                       border border-primary/30 mb-4">
+            <ImageIcon className="w-4 h-4 text-primary" />
+            <span className="text-sm text-primary font-medium">Generador de Fantasías</span>
           </div>
           
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gradient">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-text-main">
             {translations.title}
           </h2>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-text-muted">
             {translations.subtitle}
           </p>
         </motion.div>
 
-        {/* Image Generator Interface */}
+        {/* Image Upload & Generator Interface */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="relative"
         >
-          <div className="rounded-3xl bg-gradient-to-br from-primary-darker to-primary-dark 
-                        border border-neon-violet/30 shadow-2xl overflow-hidden">
-            {/* Decorative elements */}
-            <div className="absolute -top-20 -right-20 w-40 h-40 bg-neon-pink/20 rounded-full blur-3xl" />
-            <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-neon-violet/20 rounded-full blur-3xl" />
-
+          <div className="rounded-3xl bg-bg-deep border border-white/5 shadow-2xl overflow-hidden">
             <div className="relative z-10 p-6 md:p-8">
-              {/* Input Form */}
+              {/* Upload Form */}
               <form onSubmit={handleSubmit} className="mb-6">
                 <div className="space-y-4">
+                  {/* Image Upload Area */}
                   <div className="relative">
                     <input
-                      type="text"
-                      value={inputText}
-                      onChange={(e) => setInputText(e.target.value)}
-                      placeholder={translations.placeholder}
+                      type="file"
+                      accept="image/*"
+                      onChange={handleImageSelect}
                       disabled={isGenerating}
-                      className="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-2xl
-                               text-white placeholder-gray-500 text-lg
-                               focus:outline-none focus:border-neon-violet/50 focus:ring-2 focus:ring-neon-violet/20
-                               transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="hidden"
+                      id="image-upload"
                     />
-                    <ImageIcon className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500" />
+                    <label
+                      htmlFor="image-upload"
+                      className={`block w-full p-8 border-2 border-dashed rounded-2xl cursor-pointer
+                               transition-all duration-300 ${
+                                 selectedImage
+                                   ? 'border-primary/50 bg-primary/5'
+                                   : 'border-white/10 hover:border-primary/30 bg-white/5'
+                               } ${isGenerating ? 'opacity-50 cursor-not-allowed' : ''}`}
+                    >
+                      {selectedImage ? (
+                        <div className="relative">
+                          <div className="relative w-full h-64 rounded-xl overflow-hidden mb-4">
+                            <Image
+                              src={selectedImage}
+                              alt="Imagen seleccionada"
+                              fill
+                              className="object-cover"
+                            />
+                          </div>
+                          <div className="flex items-center justify-center gap-2 text-primary">
+                            <ImageIcon className="w-5 h-5" />
+                            <span className="text-sm font-medium">Imagen seleccionada - Click para cambiar</span>
+                          </div>
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.preventDefault();
+                              setSelectedImage(null);
+                            }}
+                            className="absolute top-2 right-2 p-2 bg-bg-deep/80 rounded-full hover:bg-accent-hot/20 transition-colors"
+                          >
+                            <X className="w-4 h-4 text-text-main" />
+                          </button>
+                        </div>
+                      ) : (
+                        <div className="text-center">
+                          <Upload className="w-12 h-12 text-primary mx-auto mb-4" />
+                          <p className="text-text-main font-medium mb-2">
+                            Sube una imagen para generar tu fantasía
+                          </p>
+                          <p className="text-text-muted text-sm">
+                            PNG, JPG, WEBP hasta 10MB
+                          </p>
+                        </div>
+                      )}
+                    </label>
                   </div>
                   
+                  {/* Generate Button */}
                   <motion.button
                     type="submit"
-                    whileHover={{ scale: isGenerating ? 1 : 1.02 }}
-                    whileTap={{ scale: isGenerating ? 1 : 0.98 }}
-                    disabled={!inputText.trim() || isGenerating}
+                    whileHover={{ scale: isGenerating || !selectedImage ? 1 : 1.02 }}
+                    whileTap={{ scale: isGenerating || !selectedImage ? 1 : 0.98 }}
+                    disabled={!selectedImage || isGenerating}
                     className={`w-full px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300
                               flex items-center justify-center gap-3
-                              ${inputText.trim() && !isGenerating
-                                ? 'bg-neon-gradient text-white shadow-lg shadow-neon-pink/30 hover:shadow-neon-pink/50' 
-                                : 'bg-gray-800/50 text-gray-500 cursor-not-allowed'}`}
+                              ${selectedImage && !isGenerating
+                                ? 'bg-primary text-white shadow-lg shadow-primary-glow/50 hover:shadow-primary-glow/70' 
+                                : 'bg-bg-card text-text-muted cursor-not-allowed'}`}
                   >
                     {isGenerating ? (
                       <>
@@ -231,7 +265,7 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
                       </>
                     ) : (
                       <>
-                        <Wand2 className="w-5 h-5" />
+                        <Sparkles className="w-5 h-5" />
                         <span>{translations.generate}</span>
                       </>
                     )}
@@ -244,34 +278,34 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="mb-4 p-4 bg-red-500/10 border border-red-500/30 rounded-xl"
+                  className="mb-4 p-4 bg-accent-hot/10 border border-accent-hot/30 rounded-xl"
                 >
-                  <p className="text-red-400 text-sm">{error}</p>
+                  <p className="text-accent-hot text-sm">{error}</p>
                 </motion.div>
               )}
 
-              {/* Generated Image Display */}
+              {/* Generated Story Display */}
               <AnimatePresence mode="wait">
-                {generatedImage ? (
+                {generatedStory ? (
                   <motion.div
-                    key="image"
+                    key="story"
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ duration: 0.3 }}
                     className="space-y-4"
                   >
-                    {/* Prompt Display */}
-                    <div className="bg-white/5 border border-white/10 px-4 py-3 rounded-xl">
-                      <p className="text-sm text-gray-400 mb-1">Prompt:</p>
-                      <p className="text-white">{currentPrompt}</p>
+                    {/* Result Label */}
+                    <div className="bg-bg-card border border-white/10 px-4 py-3 rounded-xl">
+                      <p className="text-sm text-text-muted mb-1">Resultado:</p>
+                      <p className="text-text-main font-medium">Historia generada con IA</p>
                     </div>
 
-                    {/* Image Container */}
-                    <div className="relative w-full aspect-square rounded-2xl overflow-hidden border-2 border-neon-violet/30 shadow-2xl">
+                    {/* Story Image Container */}
+                    <div className="relative w-full aspect-square rounded-2xl overflow-hidden border-2 border-primary/30 shadow-2xl shadow-primary-glow/20">
                       <Image
-                        src={generatedImage}
-                        alt="Generated image"
+                        src={generatedStory}
+                        alt="Historia generada"
                         fill
                         className="object-cover"
                       />
@@ -282,11 +316,11 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
                       onClick={handleNewGeneration}
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="w-full px-6 py-3 rounded-xl bg-white/5 border border-white/10
-                               text-white font-medium hover:bg-white/10 transition-all duration-300
-                               flex items-center justify-center gap-2"
+                      className="w-full px-6 py-3 rounded-xl bg-bg-card border border-white/10
+                               text-text-main font-medium hover:bg-bg-card/80 hover:border-primary/50 
+                               transition-all duration-300 flex items-center justify-center gap-2"
                     >
-                      <Wand2 className="w-5 h-5" />
+                      <Upload className="w-5 h-5" />
                       <span>{translations.generateAnother}</span>
                     </motion.button>
                   </motion.div>
@@ -299,10 +333,10 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
                     className="h-[400px] flex items-center justify-center text-center border-2 border-dashed border-white/10 rounded-2xl"
                   >
                     <div>
-                      <ImageIcon className="w-16 h-16 text-neon-violet/50 mx-auto mb-4" />
-                      <p className="text-gray-400 text-lg mb-2">Tu imagen aparecerá aquí</p>
-                      <p className="text-gray-500 text-sm max-w-md mx-auto">
-                        Escribe una descripción y genera tu imagen
+                      <ImageIcon className="w-16 h-16 text-primary/50 mx-auto mb-4" />
+                      <p className="text-text-main text-lg mb-2">Tu historia aparecerá aquí</p>
+                      <p className="text-text-muted text-sm max-w-md mx-auto">
+                        Sube una imagen y genera tu fantasía visual
                       </p>
                     </div>
                   </motion.div>
@@ -312,7 +346,7 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="h-[400px] flex items-center justify-center border-2 border-dashed border-neon-violet/30 rounded-2xl bg-neon-violet/5"
+                    className="h-[400px] flex items-center justify-center border-2 border-dashed border-primary/30 rounded-2xl bg-primary/5"
                   >
                     <div className="text-center">
                       <motion.div
@@ -323,10 +357,10 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
                         transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
                         className="mb-4"
                       >
-                        <Sparkles className="w-12 h-12 text-neon-violet mx-auto" />
+                        <Sparkles className="w-12 h-12 text-primary mx-auto" />
                       </motion.div>
-                      <p className="text-white text-lg font-medium mb-2">{translations.generating}</p>
-                      <p className="text-gray-400 text-sm">Creando tu imagen...</p>
+                      <p className="text-text-main text-lg font-medium mb-2">{translations.generating}</p>
+                      <p className="text-text-muted text-sm">Creando tu historia...</p>
                     </div>
                   </motion.div>
                 )}

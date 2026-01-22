@@ -6,21 +6,21 @@
 
 @layer base {
   body {
-    @apply bg-primary-dark text-white font-sans antialiased;
+    @apply bg-bg-deep text-text-main font-sans antialiased;
   }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-neon-magenta via-neon-purple to-accent-purple;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary-glow to-accent-hot;
   }
   
-  .glow-pink {
-    box-shadow: 0 0 30px rgba(255, 0, 110, 0.7), 0 0 60px rgba(255, 10, 120, 0.4);
+  .glow-primary {
+    box-shadow: 0 0 30px rgba(0, 153, 255, 0.5), 0 0 60px rgba(79, 195, 247, 0.3);
   }
   
-  .glow-violet {
-    box-shadow: 0 0 30px rgba(183, 148, 246, 0.7), 0 0 60px rgba(199, 125, 255, 0.4);
+  .glow-accent {
+    box-shadow: 0 0 30px rgba(255, 110, 64, 0.5), 0 0 60px rgba(255, 110, 64, 0.3);
   }
   
   .backdrop-blur-custom {

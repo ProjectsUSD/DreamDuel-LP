@@ -13,6 +13,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import FloatingCharacters from '@/components/FloatingCharacters';
 import WaitlistSection from '@/components/WaitlistSection';
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
   const t = useTranslations();
@@ -21,6 +22,18 @@ export default function Home() {
 
   return (
     <main className="min-h-screen relative">
+      {/* Navbar */}
+      <Navbar 
+        translations={{
+          home: t('navbar.home'),
+          generator: t('navbar.generator'),
+          features: t('navbar.features'),
+          pricing: t('navbar.pricing'),
+          testimonials: t('navbar.testimonials'),
+          waitlist: t('navbar.waitlist'),
+        }}
+      />
+
       {/* Animated Background */}
       <AnimatedBackground />
       
@@ -28,7 +41,8 @@ export default function Home() {
       <FloatingCharacters />
 
       {/* Hero Section */}
-      <HeroSection 
+      <section id="inicio" className="pt-20">
+        <HeroSection 
         translations={{
           title: t('hero.title'),
           subtitle: t('hero.subtitle'),
@@ -36,6 +50,7 @@ export default function Home() {
           ctaSecondary: t('hero.ctaSecondary'),
         }}
       />
+      </section>
 
       {/* Live Simulator */}
       <LiveSimulator 
@@ -54,18 +69,20 @@ export default function Home() {
       />
 
       {/* Features Section */}
-      <FeaturesSection 
+      <section id="caracteristicas">
+        <FeaturesSection 
         translations={{
           title: t('features.title'),
           subtitle: t('features.subtitle'),
           items: t.raw('features.items'),
           cta: t('features.cta'),
           ctaQuestion: t('features.ctaQuestion'),
-        }}
-      />
+        }}  />
+      </section>
 
       {/* Pricing Section */}
-      <PricingSection 
+      <section id="planes">
+        <PricingSection 
         translations={{
           title: t('pricing.title'),
           subtitle: t('pricing.subtitle'),
@@ -74,18 +91,22 @@ export default function Home() {
           premium: t.raw('pricing.premium'),
         }}
       />
+      </section>
 
       {/* Testimonials */}
-      <Testimonials 
+      <section id="testimonios">
+        <Testimonials 
         translations={{
           title: t('testimonials.title'),
           subtitle: t('testimonials.subtitle'),
           items: t.raw('testimonials.items'),
         }}
       />
+      </section>
 
       {/* Waitlist Section */}
-      <WaitlistSection 
+      <section id="waitlist">
+        <WaitlistSection 
         translations={{
           badge: t('waitlist.badge'),
           title: t('waitlist.title'),
@@ -101,11 +122,15 @@ export default function Home() {
           },
         }}
       />
+      </section>
 
       {/* Footer */}
       <Footer 
         translations={{
           tagline: t('footer.tagline'),
+          downloadApp: t('footer.downloadApp'),
+          ios: t('footer.ios'),
+          android: t('footer.android'),
           privacy: t('footer.privacy'),
           terms: t('footer.terms'),
           contact: t('footer.contact'),

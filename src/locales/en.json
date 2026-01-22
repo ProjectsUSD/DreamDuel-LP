@@ -1,4 +1,12 @@
 {
+  "navbar": {
+    "home": "Home",
+    "generator": "Generator",
+    "features": "Features",
+    "pricing": "Pricing",
+    "testimonials": "Testimonials",
+    "waitlist": "Waitlist"
+  },
   "hero": {
     "title": "Your Fantasies, Tangible Reality",
     "subtitle": "Turn simple fantasies into visual stories with AI. Just describe people, theme, and context - AI creates the rest in 30 seconds.",
@@ -194,6 +202,9 @@
   },
   "footer": {
     "tagline": "Where your fantasies become tangible",
+    "downloadApp": "Download App",
+    "ios": "Download on iOS",
+    "android": "Download on Android",
     "privacy": "Privacy",
     "terms": "Terms",
     "contact": "Contact",

@@ -1,4 +1,12 @@
 {
+  "navbar": {
+    "home": "Inicio",
+    "generator": "Generador",
+    "features": "Características",
+    "pricing": "Planes",
+    "testimonials": "Testimonios",
+    "waitlist": "Waitlist"
+  },
   "hero": {
     "title": "Tus Fantasías, Realidad Tangible",
     "subtitle": "Convierte fantasías simples en historias visuales con IA. Solo describe personas, temática y contexto - la IA crea el resto en 30 segundos.",
@@ -194,6 +202,9 @@
   },
   "footer": {
     "tagline": "Donde tus fantasías se vuelven tangibles",
+    "downloadApp": "Descargar App",
+    "ios": "Descargar en iOS",
+    "android": "Descargar en Android",
     "privacy": "Privacidad",
     "terms": "Términos",
     "contact": "Contacto",

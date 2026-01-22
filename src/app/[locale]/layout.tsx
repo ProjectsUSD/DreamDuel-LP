@@ -9,6 +9,17 @@ export const metadata: Metadata = {
   keywords: 'fantasías, AI, historias visuales, IA generativa, NSFW, escenarios intensos, venganza, lujuria, romance oscuro',
   authors: [{ name: 'DreamDuel' }],
   robots: 'noindex, nofollow', // Importante para contenido adulto
+  icons: {
+    icon: [
+      { url: '/images/Logo/Logo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/images/Logo/Logo.png', sizes: '16x16', type: 'image/png' },
+      { url: '/images/Logo/Logo.png', sizes: '192x192', type: 'image/png' },
+      { url: '/images/Logo/Logo.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/images/Logo/Logo.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
 };
 
 export default async function LocaleLayout({
