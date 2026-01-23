@@ -23,6 +23,7 @@ interface LiveSimulatorProps {
 
 export default function LiveSimulator({ translations }: LiveSimulatorProps) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [description, setDescription] = useState('');
   const [generatedStory, setGeneratedStory] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -53,7 +54,7 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!selectedImage || isGenerating) return;
+    if ((!selectedImage && !description) || isGenerating) return;
 
     setIsGenerating(true);
     setGeneratedStory(null);
@@ -69,6 +70,7 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
           },
           body: JSON.stringify({ 
             image: selectedImage,
+            description: description,
             // Puedes agregar más parámetros según tu API
           }),
         });
@@ -241,16 +243,35 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
                       )}
                     </label>
                   </div>
+
+                  {/* Text Description */}
+                  <div className="relative">
+                    <textarea
+                      value={description}
+                      onChange={(e) => setDescription(e.target.value)}
+                      placeholder={translations.placeholder}
+                      disabled={isGenerating}
+                      rows={4}
+                      className="w-full px-6 py-4 bg-bg-card border border-white/10 rounded-2xl
+                               text-text-main placeholder:text-text-muted
+                               focus:outline-none focus:border-primary/50 focus:bg-bg-deep
+                               transition-all duration-300 resize-none
+                               disabled:opacity-50 disabled:cursor-not-allowed"
+                    />
+                    <div className="absolute bottom-3 right-3 text-xs text-text-muted">
+                      {description.length}/500
+                    </div>
+                  </div>
                   
                   {/* Generate Button */}
                   <motion.button
                     type="submit"
-                    whileHover={{ scale: isGenerating || !selectedImage ? 1 : 1.02 }}
-                    whileTap={{ scale: isGenerating || !selectedImage ? 1 : 0.98 }}
-                    disabled={!selectedImage || isGenerating}
+                    whileHover={{ scale: isGenerating || (!selectedImage && !description) ? 1 : 1.02 }}
+                    whileTap={{ scale: isGenerating || (!selectedImage && !description) ? 1 : 0.98 }}
+                    disabled={(!selectedImage && !description) || isGenerating}
                     className={`w-full px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300
                               flex items-center justify-center gap-3
-                              ${selectedImage && !isGenerating
+                              ${(selectedImage || description) && !isGenerating
                                 ? 'bg-primary text-white shadow-lg shadow-primary-glow/50 hover:shadow-primary-glow/70' 
                                 : 'bg-bg-card text-text-muted cursor-not-allowed'}`}
                   >
