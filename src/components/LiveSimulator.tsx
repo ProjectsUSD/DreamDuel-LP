@@ -15,6 +15,7 @@ interface LiveSimulatorProps {
     result: string;
     continueStory: string;
     generateAnother: string;
+    ctaButton: string;
     inputLabel: string;
     generating: string;
     chatMode: string;
@@ -333,18 +334,37 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
                       />
                     </div>
 
-                    {/* New Generation Button */}
-                    <motion.button
-                      onClick={handleNewGeneration}
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      className="w-full px-6 py-3 rounded-xl bg-bg-card border border-white/10
-                               text-text-main font-medium hover:bg-bg-card/80 hover:border-primary/50 
-                               transition-all duration-300 flex items-center justify-center gap-2"
-                    >
-                      <Upload className="w-5 h-5" />
-                      <span>{translations.generateAnother}</span>
-                    </motion.button>
+                    {/* Action Buttons */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {/* CTA Button - Main Action */}
+                      <motion.a
+                        href={process.env.NEXT_PUBLIC_APP_URL || 'https://app.dreamduel.com'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        className="px-6 py-4 rounded-xl bg-primary text-white font-semibold
+                                 shadow-lg shadow-primary-glow/50 hover:shadow-primary-glow/70
+                                 transition-all duration-300 flex items-center justify-center gap-2
+                                 text-center"
+                      >
+                        <Sparkles className="w-5 h-5" />
+                        <span>{translations.ctaButton}</span>
+                      </motion.a>
+
+                      {/* New Generation Button */}
+                      <motion.button
+                        onClick={handleNewGeneration}
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        className="px-6 py-3 rounded-xl bg-bg-card border border-white/10
+                                 text-text-main font-medium hover:bg-bg-card/80 hover:border-primary/50 
+                                 transition-all duration-300 flex items-center justify-center gap-2"
+                      >
+                        <Upload className="w-5 h-5" />
+                        <span>{translations.generateAnother}</span>
+                      </motion.button>
+                    </div>
                   </motion.div>
                 ) : !isGenerating ? (
                   <motion.div
@@ -356,7 +376,7 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
                   >
                     <div>
                       <ImageIcon className="w-16 h-16 text-primary/50 mx-auto mb-4" />
-                      <p className="text-text-main text-lg mb-2">Tu historia aparecerá aquí</p>
+                      <p className="text-text-main text-lg mb-2">Generador de imagenes sin restricciones</p>
                       <p className="text-text-muted text-sm max-w-md mx-auto">
                         Sube una imagen y genera tu fantasía visual
                       </p>

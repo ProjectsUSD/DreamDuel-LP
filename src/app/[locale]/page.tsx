@@ -63,6 +63,7 @@ export default function Home() {
           result: t('simulator.result'),
           continueStory: t('simulator.continueStory'),
           generateAnother: t('simulator.generateAnother'),
+          ctaButton: t('simulator.ctaButton'),
           inputLabel: t('simulator.inputLabel'),
           generating: t('simulator.generating'),
           chatMode: t('simulator.chatMode'),
