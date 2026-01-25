@@ -86,20 +86,6 @@ export default function Navbar({ translations }: NavbarProps) {
             ))}
             
             <LanguageSwitcher />
-            
-            <motion.a
-              href="#waitlist"
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection('#waitlist');
-              }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-6 py-2.5 bg-primary text-white rounded-lg font-semibold
-                       shadow-lg shadow-primary-glow/50 hover:shadow-primary-glow/70 transition-all duration-300"
-            >
-              Unirme
-            </motion.a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -135,17 +121,6 @@ export default function Navbar({ translations }: NavbarProps) {
             <div className="py-2">
               <LanguageSwitcher />
             </div>
-            <a
-              href="#waitlist"
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection('#waitlist');
-              }}
-              className="block w-full px-6 py-3 bg-primary text-white text-center rounded-lg font-semibold
-                       shadow-lg shadow-primary-glow/50"
-            >
-              Unirme
-            </a>
           </motion.div>
         )}
       </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Heart, Shield, Mail, Twitter, Github, MessageCircle, Apple, Smartphone } from 'lucide-react';
+import { Heart, Shield, Mail, Twitter, MessageCircle, Apple, Smartphone, Instagram, Facebook } from 'lucide-react';
 import Image from 'next/image';
 
 interface FooterProps {
@@ -20,8 +20,9 @@ interface FooterProps {
 export default function Footer({ translations }: FooterProps) {
   const socialLinks = [
     { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: MessageCircle, href: '#', label: 'Discord' },
+    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Facebook, href: '#', label: 'Facebook' },
+    { icon: MessageCircle, href: 'https://discord.gg/c3abxqdR', label: 'Discord' },
   ];
 
   const legalLinks = [
