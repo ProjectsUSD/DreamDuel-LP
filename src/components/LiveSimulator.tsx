@@ -55,7 +55,7 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if ((!selectedImage && !description) || isGenerating) return;
+    if (!description.trim() || isGenerating) return;
 
     setIsGenerating(true);
     setGeneratedStory(null);
@@ -267,12 +267,12 @@ export default function LiveSimulator({ translations }: LiveSimulatorProps) {
                   {/* Generate Button */}
                   <motion.button
                     type="submit"
-                    whileHover={{ scale: isGenerating || (!selectedImage && !description) ? 1 : 1.02 }}
-                    whileTap={{ scale: isGenerating || (!selectedImage && !description) ? 1 : 0.98 }}
-                    disabled={(!selectedImage && !description) || isGenerating}
+                    whileHover={{ scale: isGenerating || !description.trim() ? 1 : 1.02 }}
+                    whileTap={{ scale: isGenerating || !description.trim() ? 1 : 0.98 }}
+                    disabled={!description.trim() || isGenerating}
                     className={`w-full px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300
                               flex items-center justify-center gap-3
-                              ${(selectedImage || description) && !isGenerating
+                              ${description.trim() && !isGenerating
                                 ? 'bg-primary text-white shadow-lg shadow-primary-glow/50 hover:shadow-primary-glow/70' 
                                 : 'bg-bg-card text-text-muted cursor-not-allowed'}`}
                   >
