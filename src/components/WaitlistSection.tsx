@@ -14,6 +14,11 @@ interface WaitlistSectionProps {
     successTitle: string;
     successMessage: string;
     loading: string;
+    disclaimer: string;
+    errorEmail: string;
+    errorInvalidEmail: string;
+    freeAccess: string;
+    priorityAccess: string;
     stats: {
       users: string;
       waitTime: string;
@@ -40,12 +45,12 @@ export default function WaitlistSection({ translations }: WaitlistSectionProps) 
     e.preventDefault();
     
     if (!email.trim()) {
-      setError('Por favor ingresa tu email');
+      setError(translations.errorEmail);
       return;
     }
 
     if (!validateEmail(email)) {
-      setError('Por favor ingresa un email válido');
+      setError(translations.errorInvalidEmail);
       return;
     }
 
@@ -221,7 +226,7 @@ export default function WaitlistSection({ translations }: WaitlistSectionProps) 
                 </div>
 
                 <p className="text-gray-500 text-xs">
-                  Únete a miles de usuarios esperando el lanzamiento. Sin spam, solo actualizaciones importantes.
+                  {translations.disclaimer}
                 </p>
               </form>
             ) : (
@@ -260,12 +265,12 @@ export default function WaitlistSection({ translations }: WaitlistSectionProps) 
           >
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-neon-violet" />
-              <span>Gratis por tiempo limitado</span>
+              <span>{translations.freeAccess}</span>
             </div>
             <div className="w-px h-4 bg-white/20 hidden sm:block" />
             <div className="flex items-center gap-2 hidden sm:flex">
               <CheckCircle2 className="w-4 h-4 text-neon-violet" />
-              <span>Acceso prioritario</span>
+              <span>{translations.priorityAccess}</span>
             </div>
           </motion.div>
         </motion.div>

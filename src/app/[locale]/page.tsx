@@ -100,6 +100,11 @@ export default function Home() {
           successTitle: t('waitlist.successTitle'),
           successMessage: t('waitlist.successMessage'),
           loading: t('waitlist.loading'),
+          disclaimer: t('waitlist.disclaimer'),
+          errorEmail: t('waitlist.errorEmail'),
+          errorInvalidEmail: t('waitlist.errorInvalidEmail'),
+          freeAccess: t('waitlist.freeAccess'),
+          priorityAccess: t('waitlist.priorityAccess'),
           stats: {
             users: t('waitlist.stats.users'),
             waitTime: t('waitlist.stats.waitTime'),

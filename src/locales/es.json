@@ -65,11 +65,11 @@
       "currency": "$",
       "period": "/mes",
       "features": [
-        "3 fantasías cada 12 horas",
-        "Contenido suave",
-        "5 escenas por historia",
-        "Personajes básicos",
-        "Soporte por email"
+        "3 créditos cada 12 horas",
+        "Temáticas Limitadas",
+        "3 escenas por historia",
+        "2 personajes personalizados con imagen",
+        "Soporte email/discord"
       ],
       "cta": "Comenzar Gratis"
     },
@@ -115,6 +115,11 @@
     "successTitle": "¡Bienvenido a la Waitlist! 🎉",
     "successMessage": "Te enviaremos un email cuando estemos listos. Prepárate para convertir tus fantasías en realidad.",
     "loading": "Guardando...",
+    "disclaimer": "Únete a miles de usuarios esperando el lanzamiento. Sin spam, solo actualizaciones importantes.",
+    "errorEmail": "Por favor ingresa tu email",
+    "errorInvalidEmail": "Por favor ingresa un email válido",
+    "freeAccess": "Gratis por tiempo limitado",
+    "priorityAccess": "Acceso prioritario",
     "stats": {
       "users": "2,547+ en lista",
       "waitTime": "Lanzamiento Feb 2026"

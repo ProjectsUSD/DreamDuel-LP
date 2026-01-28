@@ -65,11 +65,11 @@
       "currency": "$",
       "period": "/month",
       "features": [
-        "3 fantasies every 12 hours",
-        "Soft content",
-        "5 scenes per story",
-        "Basic characters",
-        "Email support"
+        "3 credits every 12 hours",
+        "Limited Themes",
+        "3 scenes per story",
+        "2 custom characters with image",
+        "Email/discord support"
       ],
       "cta": "Start Free"
     },
@@ -115,6 +115,11 @@
     "successTitle": "Welcome to the Waitlist! 🎉",
     "successMessage": "We'll email you when we're ready. Get ready to turn your fantasies into reality.",
     "loading": "Saving...",
+    "disclaimer": "Join thousands of users waiting for launch. No spam, only important updates.",
+    "errorEmail": "Please enter your email",
+    "errorInvalidEmail": "Please enter a valid email",
+    "freeAccess": "Free for limited time",
+    "priorityAccess": "Priority access",
     "stats": {
       "users": "2,547+ on list",
       "waitTime": "Launch Feb 2026"
