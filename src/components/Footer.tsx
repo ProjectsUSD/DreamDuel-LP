@@ -15,11 +15,19 @@ interface FooterProps {
   translations: {
     tagline: string;
     downloadApp: string;
-    ios: string;
-    android: string;
+    downloadOn: string;
+    appStore: string;
+    googlePlay: string;
+    contentWarning: string;
+    community: string;
+    legal: string;
     privacy: string;
     terms: string;
     contact: string;
+    madeWith: string;
+    by: string;
+    warning: string;
+    disclaimer: string;
     copyright: string;
   };
 }
@@ -47,7 +55,7 @@ export default function Footer({ translations }: FooterProps) {
       </div>
 
       <div className="container mx-auto px-4 py-12 relative z-10">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 mb-12">
           {/* Brand & Download */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -78,8 +86,8 @@ export default function Footer({ translations }: FooterProps) {
               >
                 <Apple className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
                 <div className="text-left">
-                  <p className="text-xs text-text-muted">Descargar en</p>
-                  <p className="text-sm font-semibold text-text-main">App Store</p>
+                  <p className="text-xs text-text-muted">{translations.downloadOn}</p>
+                  <p className="text-sm font-semibold text-text-main">{translations.appStore}</p>
                 </div>
               </a>
               <a
@@ -89,15 +97,15 @@ export default function Footer({ translations }: FooterProps) {
               >
                 <Smartphone className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
                 <div className="text-left">
-                  <p className="text-xs text-text-muted">Descargar en</p>
-                  <p className="text-sm font-semibold text-text-main">Google Play</p>
+                  <p className="text-xs text-text-muted">{translations.downloadOn}</p>
+                  <p className="text-sm font-semibold text-text-main">{translations.googlePlay}</p>
                 </div>
               </a>
             </div>
             
             <div className="flex items-center gap-2 text-sm text-text-muted">
               <Shield className="w-4 h-4" />
-              <span>Contenido +18 • Privacidad garantizada</span>
+              <span>{translations.contentWarning}</span>
             </div>
           </motion.div>
 
@@ -108,7 +116,7 @@ export default function Footer({ translations }: FooterProps) {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            <h3 className="text-text-main font-semibold mb-4">Legal</h3>
+            <h3 className="text-text-main font-semibold mb-4">{translations.legal}</h3>
             <ul className="space-y-3">
               {legalLinks.map((link, index) => (
                 <li key={index}>
@@ -132,7 +140,7 @@ export default function Footer({ translations }: FooterProps) {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <h3 className="text-text-main font-semibold mb-4">Comunidad</h3>
+            <h3 className="text-text-main font-semibold mb-4">{translations.community}</h3>
             <div className="flex gap-3 mb-6">
               {socialLinks.map((social, index) => {
                 const Icon = social.icon;
@@ -175,7 +183,7 @@ export default function Footer({ translations }: FooterProps) {
             
             <div className="flex items-center gap-6 text-sm text-text-muted">
               <span className="flex items-center gap-2">
-                Made with <Heart className="w-4 h-4 text-accent-hot fill-accent-hot" /> by DreamDuel Team
+                {translations.madeWith} <Heart className="w-4 h-4 text-accent-hot fill-accent-hot" /> {translations.by}
               </span>
             </div>
           </div>
@@ -190,8 +198,7 @@ export default function Footer({ translations }: FooterProps) {
           className="mt-8 p-4 rounded-lg bg-accent-hot/10 border border-accent-hot/30"
         >
           <p className="text-xs text-accent-hot/90 text-center leading-relaxed">
-            ⚠️ <strong>Advertencia:</strong> Este sitio contiene contenido generado por IA destinado exclusivamente a adultos mayores de 18 años. 
-            Todo el contenido es ficticio. Respetamos la privacidad y promovemos el uso responsable de la tecnología.
+            ⚠️ <strong>{translations.warning}</strong> {translations.disclaimer}
           </p>
         </motion.div>
       </div>

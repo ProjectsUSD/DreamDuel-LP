@@ -12,7 +12,9 @@
     "title": "Your Fantasies, Tangible Reality",
     "subtitle": "Turn simple fantasies into visual stories with AI. Just describe people, theme, and context - AI creates the rest in 30 seconds.",
     "cta": "Create My Fantasy Free",
-    "ctaSecondary": "View Created Fantasies ✨"
+    "ctaSecondary": "View Created Fantasies ✨",
+    "storiesCreated": "10K+ stories created",
+    "privacyGuaranteed": "Privacy guaranteed"
   },
   "ageVerification": {
     "title": "Age Verification",
@@ -73,7 +75,7 @@
     },
     "premium": {
       "name": "Premium",
-      "price": "12.99",
+      "price": "15",
       "currency": "$",
       "period": "/month",
       "popular": "Most Popular",
@@ -87,12 +89,23 @@
         "24/7 priority support",
         "Advanced interactive preview"
       ],
-      "cta": "Unlock Premium"
+      "cta": "Unlock Premium",
+      "cancelPolicy": "🔒 Cancel anytime. No commitments."
     }
   },
   "characters": {
     "title": "Archetypes for your Fantasies",
-    "types": ["Revenge 🔥", "Lust 💋", "Power 👑", "Romance 🌹", "Dark 🌙", "Intense ⚡", "Dominant 💎", "Mysterious 🔮"]
+    "types": ["Revenge 🔥", "Lust 💋", "Power 👑", "Romance 🌹", "Dark 🌙", "Intense ⚡", "Dominant 💎", "Mysterious 🔮"],
+    "descriptions": [
+      "What are you looking at? It's not like I care...",
+      "Do what I tell you and we'll be happy.",
+      "I-if you want... we can spend time together...",
+      "I have secrets that only you will know.",
+      "Let's create our own adventure!",
+      "Let's analyze this together... in private.",
+      "I don't follow rules. Do you?",
+      "Perfection has a price... that you'll pay."
+    ]
   },
   "waitlist": {
     "badge": "Coming Soon",
@@ -206,11 +219,19 @@
   "footer": {
     "tagline": "Where your fantasies become tangible",
     "downloadApp": "Download App",
-    "ios": "Download on iOS",
-    "android": "Download on Android",
+    "downloadOn": "Download on",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "contentWarning": "+18 Content • Privacy Guaranteed",
+    "community": "Community",
+    "legal": "Legal",
     "privacy": "Privacy",
     "terms": "Terms",
     "contact": "Contact",
+    "madeWith": "Made with",
+    "by": "by DreamDuel Team",
+    "warning": "Warning:",
+    "disclaimer": "This site contains AI-generated content exclusively for adults over 18 years of age. All content is fictional. We respect privacy and promote responsible use of technology.",
     "copyright": "© 2025 DreamDuel. All rights reserved."
   }
 }

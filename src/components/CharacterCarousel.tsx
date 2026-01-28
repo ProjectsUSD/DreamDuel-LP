@@ -7,6 +7,7 @@ interface CharacterCarouselProps {
   translations: {
     title: string;
     types: string[];
+    descriptions: string[];
     subtitle: string;
   };
 }
@@ -19,56 +20,56 @@ export default function CharacterCarousel({ translations }: CharacterCarouselPro
       type: translations.types[0], 
       image: 'https://picsum.photos/seed/sakura/300/400',
       color: 'from-pink-600 to-rose-600',
-      description: '¿Qué miras? No es que me importe...'
+      description: translations.descriptions[0]
     },
     { 
       name: 'Akira', 
       type: translations.types[1], 
       image: 'https://picsum.photos/seed/akira/300/400',
       color: 'from-purple-600 to-violet-600',
-      description: 'Haz lo que te diga y seremos felices.'
+      description: translations.descriptions[1]
     },
     { 
       name: 'Yuki', 
       type: translations.types[2], 
       image: 'https://picsum.photos/seed/yuki/300/400',
       color: 'from-blue-500 to-cyan-500',
-      description: 'S-si quieres... podemos pasar tiempo juntos...'
+      description: translations.descriptions[2]
     },
     { 
       name: 'Raven', 
       type: translations.types[3], 
       image: 'https://picsum.photos/seed/raven/300/400',
       color: 'from-indigo-600 to-purple-700',
-      description: 'Tengo secretos que solo tú conocerás.'
+      description: translations.descriptions[3]
     },
     { 
       name: 'Luna', 
       type: translations.types[4], 
       image: 'https://picsum.photos/seed/luna/300/400',
       color: 'from-orange-600 to-red-600',
-      description: '¡Vamos a crear nuestra propia aventura!'
+      description: translations.descriptions[4]
     },
     { 
       name: 'Iris', 
       type: translations.types[5], 
       image: 'https://picsum.photos/seed/iris/300/400',
       color: 'from-teal-600 to-emerald-600',
-      description: 'Analicemos esto juntos... en privado.'
+      description: translations.descriptions[5]
     },
     { 
       name: 'Nova', 
       type: translations.types[6], 
       image: 'https://picsum.photos/seed/nova/300/400',
       color: 'from-red-600 to-pink-700',
-      description: 'No sigo reglas. ¿Y tú?'
+      description: translations.descriptions[6]
     },
     { 
       name: 'Celeste', 
       type: translations.types[7], 
       image: 'https://picsum.photos/seed/celeste/300/400',
       color: 'from-violet-600 to-fuchsia-600',
-      description: 'La perfección tiene un precio... que pagarás.'
+      description: translations.descriptions[7]
     },
   ];
 

@@ -4,7 +4,6 @@ import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import HeroSection from '@/components/HeroSection';
 import FeaturesSection from '@/components/FeaturesSection';
-import LiveSimulator from '@/components/LiveSimulator';
 import PricingSection from '@/components/PricingSection';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
@@ -25,7 +24,6 @@ export default function Home() {
       <Navbar 
         translations={{
           home: t('navbar.home'),
-          generator: t('navbar.generator'),
           features: t('navbar.features'),
           pricing: t('navbar.pricing'),
           testimonials: t('navbar.testimonials'),
@@ -48,27 +46,11 @@ export default function Home() {
           subtitle: t('hero.subtitle'),
           cta: t('hero.cta'),
           ctaSecondary: t('hero.ctaSecondary'),
+          storiesCreated: t('hero.storiesCreated'),
+          privacyGuaranteed: t('hero.privacyGuaranteed'),
         }}
       />
       </section>
-
-      {/* Live Simulator */}
-      <LiveSimulator 
-        translations={{
-          badge: t('simulator.badge'),
-          title: t('simulator.title'),
-          subtitle: t('simulator.subtitle'),
-          placeholder: t('simulator.placeholder'),
-          generate: t('simulator.generate'),
-          result: t('simulator.result'),
-          continueStory: t('simulator.continueStory'),
-          generateAnother: t('simulator.generateAnother'),
-          ctaButton: t('simulator.ctaButton'),
-          inputLabel: t('simulator.inputLabel'),
-          generating: t('simulator.generating'),
-          chatMode: t('simulator.chatMode'),
-        }}
-      />
 
       {/* Features Section */}
       <section id="caracteristicas">
@@ -131,11 +113,19 @@ export default function Home() {
         translations={{
           tagline: t('footer.tagline'),
           downloadApp: t('footer.downloadApp'),
-          ios: t('footer.ios'),
-          android: t('footer.android'),
+          downloadOn: t('footer.downloadOn'),
+          appStore: t('footer.appStore'),
+          googlePlay: t('footer.googlePlay'),
+          contentWarning: t('footer.contentWarning'),
+          community: t('footer.community'),
+          legal: t('footer.legal'),
           privacy: t('footer.privacy'),
           terms: t('footer.terms'),
           contact: t('footer.contact'),
+          madeWith: t('footer.madeWith'),
+          by: t('footer.by'),
+          warning: t('footer.warning'),
+          disclaimer: t('footer.disclaimer'),
           copyright: t('footer.copyright'),
         }}
       />

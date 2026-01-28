@@ -12,7 +12,9 @@
     "title": "Tus Fantasías, Realidad Tangible",
     "subtitle": "Convierte fantasías simples en historias visuales con IA. Solo describe personas, temática y contexto - la IA crea el resto en 30 segundos.",
     "cta": "Crear Mi Fantasía Gratis",
-    "ctaSecondary": "Ver Fantasías Creadas ✨"
+    "ctaSecondary": "Ver Fantasías Creadas ✨",
+    "storiesCreated": "10K+ historias creadas",
+    "privacyGuaranteed": "Privacidad garantizada"
   },
   "ageVerification": {
     "title": "Verificación de Edad",
@@ -73,8 +75,8 @@
     },
     "premium": {
       "name": "Premium",
-      "price": "12.99",
-      "currency": "€",
+      "price": "15",
+      "currency": "$",
       "period": "/mes",
       "popular": "Más Popular",
       "features": [
@@ -87,12 +89,23 @@
         "Soporte prioritario 24/7",
         "Preview interactivo avanzado"
       ],
-      "cta": "Desbloquear Premium"
+      "cta": "Desbloquear Premium",
+      "cancelPolicy": "🔒 Cancela cuando quieras. Sin compromisos."
     }
   },
   "characters": {
     "title": "Arquetipos para tus Fantasías",
-    "types": ["Venganza 🔥", "Lujuria 💋", "Poder 👑", "Romance 🌹", "Oscuro 🌙", "Intenso ⚡", "Dominante 💎", "Misterioso 🔮"]
+    "types": ["Venganza 🔥", "Lujuria 💋", "Poder 👑", "Romance 🌹", "Oscuro 🌙", "Intenso ⚡", "Dominante 💎", "Misterioso 🔮"],
+    "descriptions": [
+      "¿Qué miras? No es que me importe...",
+      "Haz lo que te diga y seremos felices.",
+      "S-si quieres... podemos pasar tiempo juntos...",
+      "Tengo secretos que solo tú conocerás.",
+      "¡Vamos a crear nuestra propia aventura!",
+      "Analicemos esto juntos... en privado.",
+      "No sigo reglas. ¿Y tú?",
+      "La perfección tiene un precio... que pagarás."
+    ]
   },
   "waitlist": {
     "badge": "Lanzamiento Próximo",
@@ -206,11 +219,19 @@
   "footer": {
     "tagline": "Donde tus fantasías se vuelven tangibles",
     "downloadApp": "Descargar App",
-    "ios": "Descargar en iOS",
-    "android": "Descargar en Android",
+    "downloadOn": "Descargar en",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "contentWarning": "Contenido +18 • Privacidad garantizada",
+    "community": "Comunidad",
+    "legal": "Legal",
     "privacy": "Privacidad",
     "terms": "Términos",
     "contact": "Contacto",
+    "madeWith": "Hecho con",
+    "by": "por el Equipo DreamDuel",
+    "warning": "Advertencia:",
+    "disclaimer": "Este sitio contiene contenido generado por IA destinado exclusivamente a adultos mayores de 18 años. Todo el contenido es ficticio. Respetamos la privacidad y promovemos el uso responsable de la tecnología.",
     "copyright": "© 2025 DreamDuel. Todos los derechos reservados."
   }
 }

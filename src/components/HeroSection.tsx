@@ -12,6 +12,8 @@ interface HeroSectionProps {
     subtitle: string;
     cta: string;
     ctaSecondary: string;
+    storiesCreated: string;
+    privacyGuaranteed: string;
   };
 }
 
@@ -146,11 +148,11 @@ export default function HeroSection({ translations }: HeroSectionProps) {
             >
               <div className="flex items-center gap-2">
                 <Heart className="w-4 h-4 md:w-5 md:h-5 text-neon-pink fill-neon-pink" />
-                <span className="text-xs md:text-sm text-gray-400">10K+ historias creadas</span>
+                <span className="text-xs md:text-sm text-gray-400">{translations.storiesCreated}</span>
               </div>
               <div className="flex items-center gap-2">
                 <MessageCircle className="w-4 h-4 md:w-5 md:h-5 text-neon-violet" />
-                <span className="text-xs md:text-sm text-gray-400">Privacidad garantizada</span>
+                <span className="text-xs md:text-sm text-gray-400">{translations.privacyGuaranteed}</span>
               </div>
             </motion.div>
           </div>

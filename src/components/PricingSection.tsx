@@ -25,6 +25,7 @@ interface PricingSectionProps {
       popular: string;
       features: string[];
       cta: string;
+      cancelPolicy: string;
     };
   };
 }
@@ -99,11 +100,11 @@ export default function PricingSection({ translations }: PricingSectionProps) {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="relative"
+            className="relative h-full"
           >
             <div className="h-full p-6 md:p-8 rounded-3xl bg-gradient-to-br from-white/5 to-transparent 
                           border border-white/10 backdrop-blur-sm
-                          hover:border-white/20 transition-all duration-300">
+                          hover:border-white/20 transition-all duration-300 flex flex-col">
               {/* Header */}
               <div className="mb-6 md:mb-8">
                 <div className="flex items-center gap-2 mb-3 md:mb-4">
@@ -118,7 +119,7 @@ export default function PricingSection({ translations }: PricingSectionProps) {
               </div>
 
               {/* Features */}
-              <ul className="space-y-3 md:space-y-4 mb-6 md:mb-8">
+              <ul className="space-y-3 md:space-y-4 mb-6 md:mb-8 flex-grow">
                 {translations.free.features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-2 md:gap-3">
                     <div className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-gray-700 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -147,19 +148,11 @@ export default function PricingSection({ translations }: PricingSectionProps) {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="relative"
+            className="relative h-full"
           >
-            {/* Popular badge */}
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
-              <div className="px-6 py-2 rounded-full bg-neon-gradient text-white text-sm font-semibold
-                            shadow-lg shadow-neon-pink/50">
-                {translations.premium.popular}
-              </div>
-            </div>
-
             <div className="h-full p-6 md:p-8 rounded-3xl bg-gradient-to-br from-neon-pink/10 via-neon-violet/10 to-transparent 
                           border-2 border-neon-pink/50 backdrop-blur-sm relative overflow-hidden
-                          hover:border-neon-pink/70 transition-all duration-300 shadow-2xl shadow-neon-pink/20">
+                          hover:border-neon-pink/70 transition-all duration-300 shadow-2xl shadow-neon-pink/20 flex flex-col">
               {/* Decorative glow */}
               <div className="absolute -top-20 -right-20 w-40 h-40 bg-neon-pink/30 rounded-full blur-3xl" />
               <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-neon-violet/30 rounded-full blur-3xl" />
@@ -179,7 +172,7 @@ export default function PricingSection({ translations }: PricingSectionProps) {
                 </div>
 
                 {/* Features */}
-                <ul className="space-y-3 md:space-y-4 mb-6 md:mb-8">
+                <ul className="space-y-3 md:space-y-4 mb-6 md:mb-8 flex-grow">
                   {translations.premium.features.map((feature, index) => (
                     <motion.li
                       key={index}
@@ -202,7 +195,8 @@ export default function PricingSection({ translations }: PricingSectionProps) {
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full py-4 rounded-xl bg-neon-gradient text-white font-semibold text-lg
+                  className="w-full py-4 rounded-xl bg-neon-gradient text-white font-semibold
+                           border-2 border-neon-pink/50 hover:border-neon-pink/70
                            shadow-lg shadow-neon-pink/50 hover:shadow-neon-pink/70 
                            transition-all duration-300 relative overflow-hidden group"
                 >
@@ -217,7 +211,7 @@ export default function PricingSection({ translations }: PricingSectionProps) {
 
                 {/* Guarantee */}
                 <p className="text-center text-sm text-gray-400 mt-4">
-                  🔒 Cancela cuando quieras. Sin compromisos.
+                  {translations.premium.cancelPolicy}
                 </p>
               </div>
             </div>
