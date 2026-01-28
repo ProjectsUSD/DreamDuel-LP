@@ -11,8 +11,8 @@
     "badge": "Fantasies → Reality in 30 seconds",
     "title": "Your Fantasies, Tangible Reality",
     "subtitle": "Turn simple fantasies into visual stories with AI. Just describe people, theme, and context - AI creates the rest in 30 seconds.",
-    "cta": "Create My Fantasy Free",
-    "ctaSecondary": "View Created Fantasies ✨",
+    "cta": "Try Image Generator Free",
+    "noLimits": "No limits",
     "storiesCreated": "10K+ stories created",
     "privacyGuaranteed": "Privacy guaranteed"
   },
@@ -65,7 +65,7 @@
       "currency": "$",
       "period": "/month",
       "features": [
-        "3 fantasies/month",
+        "3 fantasies every 12 hours",
         "Soft content",
         "5 scenes per story",
         "Basic characters",
@@ -80,14 +80,13 @@
       "period": "/month",
       "popular": "Most Popular",
       "features": [
-        "Unlimited fantasies",
         "Full NSFW uncensored",
         "8-10 scenes per story",
-        "Export to short video",
-        "Saved characters with real names",
+        "10 saved characters with real names (maximum)",
+        "10 story generation credits with images per day",
+        "5 image generation credits per day",
         "Quick adjustments ('more intense', 'anime style')",
-        "24/7 priority support",
-        "Advanced interactive preview"
+        "24/7 priority support"
       ],
       "cta": "Unlock Premium",
       "cancelPolicy": "🔒 Cancel anytime. No commitments."

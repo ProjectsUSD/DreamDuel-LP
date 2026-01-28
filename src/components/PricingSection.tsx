@@ -119,7 +119,7 @@ export default function PricingSection({ translations }: PricingSectionProps) {
               </div>
 
               {/* Features */}
-              <ul className="space-y-3 md:space-y-4 mb-6 md:mb-8 flex-grow">
+              <ul className="space-y-3 md:space-y-4 flex-grow">
                 {translations.free.features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-2 md:gap-3">
                     <div className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-gray-700 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -129,16 +129,6 @@ export default function PricingSection({ translations }: PricingSectionProps) {
                   </li>
                 ))}
               </ul>
-
-              {/* CTA */}
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full py-4 rounded-xl bg-white/5 border border-white/10 text-white font-semibold
-                         hover:bg-white/10 hover:border-white/20 transition-all duration-300"
-              >
-                {translations.free.cta}
-              </motion.button>
             </div>
           </motion.div>
 
@@ -172,7 +162,7 @@ export default function PricingSection({ translations }: PricingSectionProps) {
                 </div>
 
                 {/* Features */}
-                <ul className="space-y-3 md:space-y-4 mb-6 md:mb-8 flex-grow">
+                <ul className="space-y-3 md:space-y-4 flex-grow">
                   {translations.premium.features.map((feature, index) => (
                     <motion.li
                       key={index}
@@ -190,29 +180,6 @@ export default function PricingSection({ translations }: PricingSectionProps) {
                     </motion.li>
                   ))}
                 </ul>
-
-                {/* CTA */}
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="w-full py-4 rounded-xl bg-neon-gradient text-white font-semibold
-                           border-2 border-neon-pink/50 hover:border-neon-pink/70
-                           shadow-lg shadow-neon-pink/50 hover:shadow-neon-pink/70 
-                           transition-all duration-300 relative overflow-hidden group"
-                >
-                  <span className="relative z-10">{translations.premium.cta}</span>
-                  <motion.div
-                    className="absolute inset-0 bg-white/20"
-                    initial={{ x: '-100%' }}
-                    whileHover={{ x: '100%' }}
-                    transition={{ duration: 0.6 }}
-                  />
-                </motion.button>
-
-                {/* Guarantee */}
-                <p className="text-center text-sm text-gray-400 mt-4">
-                  {translations.premium.cancelPolicy}
-                </p>
               </div>
             </div>
           </motion.div>

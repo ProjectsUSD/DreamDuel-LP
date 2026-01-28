@@ -11,7 +11,7 @@ interface HeroSectionProps {
     title: string;
     subtitle: string;
     cta: string;
-    ctaSecondary: string;
+    noLimits: string;
     storiesCreated: string;
     privacyGuaranteed: string;
   };
@@ -105,20 +105,20 @@ export default function HeroSection({ translations }: HeroSectionProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.8 }}
-              className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center"
+              className="flex flex-col items-center gap-2"
             >
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onHoverStart={() => setHoveredBtn(true)}
                 onHoverEnd={() => setHoveredBtn(false)}
-                className="group relative px-6 md:px-8 py-3 md:py-4 rounded-xl bg-neon-gradient text-white font-semibold text-base md:text-lg
+                className="group relative px-8 md:px-10 py-4 md:py-5 rounded-xl bg-neon-gradient text-white font-semibold text-lg md:text-xl
                          shadow-lg shadow-neon-pink/30 hover:shadow-neon-pink/50 transition-all duration-300
                          overflow-hidden"
               >
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   {translations.cta}
-                  <ArrowRight className={`w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 ${hoveredBtn ? 'translate-x-1' : ''}`} />
+                  <ArrowRight className={`w-5 h-5 md:w-6 md:h-6 transition-transform duration-300 ${hoveredBtn ? 'translate-x-1' : ''}`} />
                 </span>
                 <motion.div
                   className="absolute inset-0 bg-white/20"
@@ -127,16 +127,7 @@ export default function HeroSection({ translations }: HeroSectionProps) {
                   transition={{ duration: 0.6 }}
                 />
               </motion.button>
-
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 md:px-8 py-3 md:py-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10
-                         text-white font-medium text-base md:text-lg hover:bg-white/10 hover:border-white/20
-                         transition-all duration-300"
-              >
-                {translations.ctaSecondary}
-              </motion.button>
+              <p className="text-sm text-gray-400">{translations.noLimits}</p>
             </motion.div>
 
             {/* Trust indicators */}
