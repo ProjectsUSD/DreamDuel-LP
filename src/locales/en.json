@@ -9,33 +9,33 @@
     "waitlist": "Waitlist"
   },
   "about": {
-    "badge": "AI in Constant Evolution",
-    "title": "Improving Our AI Models Every Single Day",
-    "subtitle": "Startup dedicated to perfecting AI algorithms in real-time to create the most realistic fantasies on the market",
-    "description": "We're not another static AI tool. We're a team obsessed with improving our models daily. Every generated image helps train better algorithms. Every feedback refines our systems. Today's DreamDuel AI is 10x better than 3 months ago, and in 3 months it'll be 10x better than today.",
+    "badge": "Our Mission",
+    "title": "We Turn Your Fantasies into Reality",
+    "subtitle": "We're a startup dedicated to constantly improving to offer you the best experience",
+    "description": "DreamDuel was born from a simple vision: make materializing your fantasies easy, private, and better every day. We're not just another platform – we're a team committed to improving your experience daily. Every subscription helps us improve our models to create more realistic and personalized content.",
     "mission": {
-      "title": "Our Obsession: Unstoppable AI Models",
-      "description": "While you sleep, our servers train smarter models. Automatic weekly improvements, constantly expanding datasets, algorithms learning from millions of generations. Your fantasies don't just materialize – they improve exponentially every time you use DreamDuel."
+      "title": "Your Subscription Improves the Service",
+      "description": "Every Premium user allows us to invest in improving the platform. Your fantasies today are better than 3 months ago, and in 3 months they'll be even better. We constantly improve the quality, speed, and personalization of the content you generate."
     },
     "values": [
       {
-        "title": "24/7 Model Improvement",
-        "description": "5 machine learning engineers training models non-stop. Every Tuesday we deploy an improved version of our algorithms. +37% better visual quality vs 2 months ago. This never stops.",
+        "title": "Continuous Improvement",
+        "description": "We constantly work to improve the quality of your creations. Each update brings better realism, more options, and more impressive results. Your experience improves with every version.",
         "icon": "🚀"
       },
       {
-        "title": "Constant Fine-Tuning",
-        "description": "Every generation feeds our dataset. Already processed +500K images training better models. Your direct feedback adjusts parameters in real-time. The AI literally learns from you.",
+        "title": "We Listen to Your Feedback",
+        "description": "Your opinion shapes the product. Every suggestion, every comment helps us improve. The features we launch are the ones you request. Your voice matters here.",
         "icon": "⚡"
       },
       {
-        "title": "Absolute Privacy",
-        "description": "Improved models + unbreakable encryption. Your data trains the AI anonymously. No one sees your content, but everyone benefits from smarter models. Total win-win.",
+        "title": "Total Privacy",
+        "description": "Your fantasies are yours and yours alone. Maximum security, zero access to your content, complete encryption. What you create here stays private forever.",
         "icon": "🔒"
       },
       {
-        "title": "Exponential Innovation",
-        "description": "We don't just update – we revolutionize. New AI architectures every quarter. What was technically impossible 6 months ago is now your daily generation. The future arrives faster here.",
+        "title": "Better Content Every Time",
+        "description": "Every subscription allows us to improve our models. More realism, better personalization, faster results. You invest in Premium, we invest in quality.",
         "icon": "🎯"
       }
     ],
@@ -58,8 +58,8 @@
       }
     ],
     "journey": {
-      "title": "From Experiment to Quality Obsession",
-      "description": "Started training models on home GPUs. 3 months later, 50+ GPU cluster working 24/7. Today we deploy automatic updates users don't even notice – but they see 2x better results. Every investment dollar goes to improving AI models, not advertising. Because we believe the best AI sells itself."
+      "title": "Our Commitment to You",
+      "description": "We started with a simple idea: create the best platform to materialize fantasies. Today thousands of users trust us. Every day we work to improve your experience. Every subscription helps us offer better quality, more features, and more impressive results. We believe the best product speaks for itself."
     },
     "cta": "Join Our Community",
     "ctaSubtitle": "Be part of the AI revolution that's changing how we create personalized adult content"
