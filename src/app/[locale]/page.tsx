@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import HeroSection from '@/components/HeroSection';
+import AboutSection from '@/components/AboutSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import PricingSection from '@/components/PricingSection';
 import Testimonials from '@/components/Testimonials';
@@ -24,6 +25,7 @@ export default function Home() {
       <Navbar 
         translations={{
           home: t('navbar.home'),
+          about: t('navbar.about'),
           features: t('navbar.features'),
           pricing: t('navbar.pricing'),
           testimonials: t('navbar.testimonials'),
@@ -50,6 +52,24 @@ export default function Home() {
           privacyGuaranteed: t('hero.privacyGuaranteed'),
         }}
       />
+      </section>
+
+      {/* About Section */}
+      <section id="nosotros">
+        <AboutSection 
+          translations={{
+            badge: t('about.badge'),
+            title: t('about.title'),
+            subtitle: t('about.subtitle'),
+            description: t('about.description'),
+            mission: t.raw('about.mission'),
+            values: t.raw('about.values'),
+            stats: t.raw('about.stats'),
+            journey: t.raw('about.journey'),
+            cta: t('about.cta'),
+            ctaSubtitle: t('about.ctaSubtitle'),
+          }}
+        />
       </section>
 
       {/* Features Section */}

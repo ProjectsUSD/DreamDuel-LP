@@ -36,7 +36,7 @@ export default function PricingSection({ translations }: PricingSectionProps) {
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] 
-                      bg-neon-violet/10 rounded-full blur-3xl" />
+                      bg-primary-glow/10 rounded-full blur-3xl" />
       </div>
 
       {/* Floating 3D Girls removed - starting from scratch */}
@@ -140,18 +140,18 @@ export default function PricingSection({ translations }: PricingSectionProps) {
             transition={{ delay: 0.2 }}
             className="relative h-full"
           >
-            <div className="h-full p-6 md:p-8 rounded-3xl bg-gradient-to-br from-neon-pink/10 via-neon-violet/10 to-transparent 
-                          border-2 border-neon-pink/50 backdrop-blur-sm relative overflow-hidden
-                          hover:border-neon-pink/70 transition-all duration-300 shadow-2xl shadow-neon-pink/20 flex flex-col">
+            <div className="h-full p-6 md:p-8 rounded-3xl bg-gradient-to-br from-primary/10 via-primary-glow/10 to-transparent 
+                          border-2 border-primary/50 backdrop-blur-sm relative overflow-hidden
+                          hover:border-primary/70 transition-all duration-300 shadow-2xl shadow-primary/20 flex flex-col">
               {/* Decorative glow */}
-              <div className="absolute -top-20 -right-20 w-40 h-40 bg-neon-pink/30 rounded-full blur-3xl" />
-              <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-neon-violet/30 rounded-full blur-3xl" />
+              <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/30 rounded-full blur-3xl" />
+              <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-primary-glow/30 rounded-full blur-3xl" />
 
               <div className="relative z-10">
                 {/* Header */}
                 <div className="mb-6 md:mb-8">
                   <div className="flex items-center gap-2 mb-3 md:mb-4">
-                    <Crown className="w-4 h-4 md:w-5 md:h-5 text-neon-pink" />
+                    <Crown className="w-4 h-4 md:w-5 md:h-5 text-primary" />
                     <h3 className="text-xl md:text-2xl font-bold text-gradient">{translations.premium.name}</h3>
                   </div>
                   <div className="flex items-baseline gap-1">
@@ -172,8 +172,8 @@ export default function PricingSection({ translations }: PricingSectionProps) {
                       transition={{ delay: 0.3 + index * 0.05 }}
                       className="flex items-start gap-2 md:gap-3"
                     >
-                      <div className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-neon-gradient flex items-center justify-center flex-shrink-0 mt-0.5
-                                    shadow-lg shadow-neon-pink/50">
+                      <div className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-primary-gradient flex items-center justify-center flex-shrink-0 mt-0.5
+                                    shadow-lg shadow-primary/50">
                         <Check className="w-2.5 h-2.5 md:w-3 md:h-3 text-white" />
                       </div>
                       <span className="text-sm md:text-base text-white">{feature}</span>

@@ -100,8 +100,8 @@ export default function ImmersiveShowcase({ locale }: ImmersiveShowcaseProps) {
     <section className="relative py-20 overflow-hidden bg-gradient-to-b from-primary-dark to-primary-darker">
       {/* Background effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-96 h-96 bg-neon-pink/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-neon-violet/10 rounded-full blur-3xl" />
+        <div className="absolute top-20 left-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-primary-glow/10 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -238,7 +238,7 @@ export default function ImmersiveShowcase({ locale }: ImmersiveShowcaseProps) {
                 onClick={() => setActiveIndex(index)}
                 className={`transition-all duration-300 rounded-full ${
                   activeIndex === index
-                    ? 'w-12 h-3 bg-neon-pink'
+                    ? 'w-12 h-3 bg-primary'
                     : 'w-3 h-3 bg-white/30 hover:bg-white/50'
                 }`}
               />

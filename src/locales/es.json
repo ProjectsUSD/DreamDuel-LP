@@ -1,11 +1,68 @@
 {
   "navbar": {
     "home": "Inicio",
+    "about": "Nosotros",
     "generator": "Generador",
     "features": "Características",
     "pricing": "Planes",
     "testimonials": "Testimonios",
     "waitlist": "Waitlist"
+  },
+  "about": {
+    "badge": "IA en Evolución Constante",
+    "title": "Mejorando Nuestros Modelos de IA Cada Día",
+    "subtitle": "Startup dedicada a perfeccionar algoritmos de IA en tiempo real para crear las fantasías más realistas del mercado",
+    "description": "No somos otra herramienta de IA estática. Somos un equipo obsesionado con mejorar nuestros modelos todos los días. Cada imagen generada nos ayuda a entrenar mejores algoritmos. Cada feedback refina nuestros sistemas. La IA de DreamDuel de hoy es 10x mejor que la de hace 3 meses, y en 3 meses será 10x mejor que hoy.",
+    "mission": {
+      "title": "Nuestra Obsesión: Modelos de IA Imparables",
+      "description": "Mientras duermes, nuestros servidores entrenan modelos más inteligentes. Mejoras automáticas semanales, datasets en expansión constante, algoritmos que aprenden de millones de generaciones. Tus fantasías no solo se materializan – mejoran exponencialmente cada vez que usas DreamDuel."
+    },
+    "values": [
+      {
+        "title": "Mejora de Modelos 24/7",
+        "description": "5 ingenieros de machine learning entrenando modelos sin parar. Cada martes desplegamos una versión mejorada de nuestros algoritmos. +37% mejor calidad visual vs hace 2 meses. Esto nunca se detiene.",
+        "icon": "🚀"
+      },
+      {
+        "title": "Fine-Tuning Constante",
+        "description": "Cada generación alimenta nuestro dataset. Ya procesamos +500K imágenes que entrenan mejores modelos. Tu feedback directo ajusta parámetros en tiempo real. La IA aprende de ti literalmente.",
+        "icon": "⚡"
+      },
+      {
+        "title": "Privacidad Absoluta",
+        "description": "Modelos mejorados + encriptación inquebrantable. Tus datos entrenan la IA de forma anónima. Nadie ve tu contenido, pero todos se benefician de modelos más inteligentes. Win-win total.",
+        "icon": "🔒"
+      },
+      {
+        "title": "Innovación Exponencial",
+        "description": "No solo actualizamos – revolucionamos. Nuevas arquitecturas de IA cada trimestre. Lo que era imposible técnicamente hace 6 meses, ahora es tu generación diaria. El futuro llega más rápido aquí.",
+        "icon": "🎯"
+      }
+    ],
+    "stats": [
+      {
+        "number": "10K+",
+        "label": "Fantasías Creadas"
+      },
+      {
+        "number": "30 seg",
+        "label": "Tiempo Promedio"
+      },
+      {
+        "number": "98%",
+        "label": "Satisfacción"
+      },
+      {
+        "number": "24/7",
+        "label": "Soporte Activo"
+      }
+    ],
+    "journey": {
+      "title": "De Experimento a Obsesión por la Calidad",
+      "description": "Empezamos entrenando modelos en GPUs caseras. 3 meses después, cluster de 50+ GPUs trabajando 24/7. Hoy desplegamos actualizaciones automáticas que usuarios ni notan – pero sí ven resultados 2x mejores. Cada dólar de inversión va a mejorar modelos de IA, no a publicidad. Porque creemos que la mejor IA vende sola."
+    },
+    "cta": "Únete a Nuestra Comunidad",
+    "ctaSubtitle": "Sé parte de la revolución de IA que está cambiando cómo creamos contenido adulto personalizado"
   },
   "hero": {
     "badge": "Fantasías → Realidad en 30 segundos",

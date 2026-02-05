@@ -18,6 +18,8 @@ const config: Config = {
         'accent-hot': '#FF6E40',
         'text-main': '#FFFFFF',
         'text-muted': '#B3B3B3',
+        'neon-pink': '#ec4899',
+        'neon-violet': '#8b5cf6',
       },
       fontFamily: {
         sans: ['Outfit', 'Nunito', 'Inter', 'system-ui', 'sans-serif'],
@@ -27,6 +29,7 @@ const config: Config = {
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'primary-gradient': 'linear-gradient(135deg, #0099FF 0%, #4FC3F7 100%)',
         'hero-gradient': 'linear-gradient(to bottom, #000A0F 0%, #1A2332 100%)',
+        'neon-gradient': 'linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%)',
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

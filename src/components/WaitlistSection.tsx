@@ -108,8 +108,8 @@ export default function WaitlistSection({ translations }: WaitlistSectionProps) 
     <section className="py-20 px-4 relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-neon-pink/20 rounded-full blur-3xl" />
-        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-neon-violet/20 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
+        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-primary-glow/20 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto max-w-4xl relative z-10">
@@ -124,11 +124,11 @@ export default function WaitlistSection({ translations }: WaitlistSectionProps) 
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neon-violet/10 
-                     border border-neon-violet/30 mb-6"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 
+                     border border-primary/30 mb-6"
           >
-            <Sparkles className="w-4 h-4 text-neon-violet" />
-            <span className="text-sm text-neon-violet font-medium">{translations.badge}</span>
+            <Sparkles className="w-4 h-4 text-primary" />
+            <span className="text-sm text-primary font-medium">{translations.badge}</span>
           </motion.div>
 
           {/* Title */}
@@ -143,12 +143,12 @@ export default function WaitlistSection({ translations }: WaitlistSectionProps) 
           {/* Stats */}
           <div className="flex items-center justify-center gap-6 md:gap-12 mb-10">
             <div className="flex items-center gap-2">
-              <Users className="w-5 h-5 text-neon-pink" />
+              <Users className="w-5 h-5 text-primary" />
               <span className="text-white font-semibold">{translations.stats.users}</span>
             </div>
             <div className="w-px h-6 bg-white/20" />
             <div className="flex items-center gap-2">
-              <Clock className="w-5 h-5 text-neon-violet" />
+              <Clock className="w-5 h-5 text-primary-glow" />
               <span className="text-white font-semibold">{translations.stats.waitTime}</span>
             </div>
           </div>
@@ -178,7 +178,7 @@ export default function WaitlistSection({ translations }: WaitlistSectionProps) 
                         disabled={isSubmitting}
                         className="w-full pl-12 pr-4 py-4 bg-white/5 border border-white/10 rounded-2xl
                                  text-white placeholder-gray-500 text-base
-                                 focus:outline-none focus:border-neon-violet/50 focus:ring-2 focus:ring-neon-violet/20
+                                 focus:outline-none focus:border-primary/50 focus:ring-2 focus:ring-primary/20
                                  transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                       />
                     </div>
@@ -191,7 +191,7 @@ export default function WaitlistSection({ translations }: WaitlistSectionProps) 
                       className={`px-8 py-4 rounded-2xl font-semibold text-base transition-all duration-300
                                 whitespace-nowrap flex items-center justify-center gap-2
                                 ${!isSubmitting
-                                  ? 'bg-neon-gradient text-white shadow-lg shadow-neon-pink/30 hover:shadow-neon-pink/50' 
+                                  ? 'bg-primary-gradient text-white shadow-lg shadow-primary/30 hover:shadow-primary/50' 
                                   : 'bg-gray-800/50 text-gray-500 cursor-not-allowed'}`}
                     >
                       {isSubmitting ? (
@@ -234,15 +234,15 @@ export default function WaitlistSection({ translations }: WaitlistSectionProps) 
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="p-8 rounded-3xl bg-gradient-to-br from-neon-violet/20 to-neon-pink/20 
-                         border border-neon-violet/30"
+                className="p-8 rounded-3xl bg-gradient-to-br from-primary/20 to-primary-glow/20 
+                         border border-primary/30"
               >
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
                 >
-                  <CheckCircle2 className="w-16 h-16 text-neon-violet mx-auto mb-4" />
+                  <CheckCircle2 className="w-16 h-16 text-primary mx-auto mb-4" />
                 </motion.div>
                 
                 <h3 className="text-2xl font-bold text-white mb-2">
@@ -264,12 +264,12 @@ export default function WaitlistSection({ translations }: WaitlistSectionProps) 
             className="mt-10 flex items-center justify-center gap-6 text-gray-400 text-sm"
           >
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-neon-violet" />
+              <CheckCircle2 className="w-4 h-4 text-primary" />
               <span>{translations.freeAccess}</span>
             </div>
             <div className="w-px h-4 bg-white/20 hidden sm:block" />
             <div className="flex items-center gap-2 hidden sm:flex">
-              <CheckCircle2 className="w-4 h-4 text-neon-violet" />
+              <CheckCircle2 className="w-4 h-4 text-primary" />
               <span>{translations.priorityAccess}</span>
             </div>
           </motion.div>

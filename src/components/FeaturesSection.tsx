@@ -23,8 +23,8 @@ export default function FeaturesSection({ translations }: FeaturesSectionProps) 
   return (
     <section className="py-20 px-4 relative overflow-hidden">
       {/* Background decorations */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-neon-violet/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-neon-pink/10 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary-glow/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
 
       {/* Floating 3D Girls - Features Section */}
       {/* Center - floating-8 (Arquera medieval) */}
@@ -76,17 +76,17 @@ export default function FeaturesSection({ translations }: FeaturesSectionProps) 
               >
                 <div className="relative h-full p-8 rounded-2xl bg-gradient-to-br from-white/5 to-transparent 
                               border border-white/10 backdrop-blur-sm
-                              hover:border-neon-pink/50 transition-all duration-300
+                              hover:border-primary/50 transition-all duration-300
                               overflow-hidden">
                   {/* Icon */}
                   <div className="mb-6 relative">
-                    <div className="w-14 h-14 rounded-xl bg-neon-gradient flex items-center justify-center
+                    <div className="w-14 h-14 rounded-xl bg-primary-gradient flex items-center justify-center
                                   group-hover:scale-110 transition-transform duration-300">
                       <Icon className="w-7 h-7 text-white" />
                     </div>
                     
                     {/* Glow effect */}
-                    <div className="absolute inset-0 w-14 h-14 rounded-xl bg-neon-pink/50 blur-xl 
+                    <div className="absolute inset-0 w-14 h-14 rounded-xl bg-primary/50 blur-xl 
                                   opacity-0 group-hover:opacity-50 transition-opacity duration-300" />
                   </div>
 
@@ -99,11 +99,11 @@ export default function FeaturesSection({ translations }: FeaturesSectionProps) 
                   </p>
 
                   {/* Decorative corner */}
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-neon-pink/10 to-transparent 
-                                rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-transparent 
+                              rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   
                   {/* Bottom glow line */}
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-neon-gradient transform scale-x-0 
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-primary-gradient transform scale-x-0 
                                 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                 </div>
               </motion.div>
@@ -123,8 +123,8 @@ export default function FeaturesSection({ translations }: FeaturesSectionProps) 
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 rounded-xl bg-neon-gradient text-white font-semibold
-                     shadow-lg shadow-neon-pink/30 hover:shadow-neon-pink/50 transition-all duration-300"
+            className="px-8 py-3 rounded-xl bg-primary-gradient text-white font-semibold
+                     shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-all duration-300"
           >
             {translations.cta}
           </motion.button>

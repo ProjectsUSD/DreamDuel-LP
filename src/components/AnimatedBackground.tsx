@@ -7,13 +7,13 @@ export default function AnimatedBackground() {
     <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
       {/* Gradient mesh background */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] 
-                    from-neon-violet/5 via-primary-dark to-primary-darker" />
+                    from-primary/5 via-primary-dark to-primary-darker" />
       
       {/* Animated orbs */}
       <motion.div
         className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full"
         style={{
-          background: 'radial-gradient(circle, rgba(236, 72, 153, 0.1) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(0, 153, 255, 0.1) 0%, transparent 70%)',
           filter: 'blur(60px)',
         }}
         animate={{
@@ -31,7 +31,7 @@ export default function AnimatedBackground() {
       <motion.div
         className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full"
         style={{
-          background: 'radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(79, 195, 247, 0.1) 0%, transparent 70%)',
           filter: 'blur(60px)',
         }}
         animate={{
@@ -49,7 +49,7 @@ export default function AnimatedBackground() {
       <motion.div
         className="absolute top-1/2 right-1/3 w-[400px] h-[400px] rounded-full"
         style={{
-          background: 'radial-gradient(circle, rgba(168, 85, 247, 0.08) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(0, 153, 255, 0.08) 0%, transparent 70%)',
           filter: 'blur(60px)',
         }}
         animate={{
@@ -67,7 +67,7 @@ export default function AnimatedBackground() {
       {[...Array(30)].map((_, i) => (
         <motion.div
           key={i}
-          className="absolute w-1 h-1 bg-neon-pink/30 rounded-full"
+          className="absolute w-1 h-1 bg-primary/30 rounded-full"
           style={{
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,

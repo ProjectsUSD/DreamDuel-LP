@@ -50,7 +50,7 @@ export default function Testimonials({ translations }: TestimonialsProps) {
   return (
     <section className="py-20 px-4 relative overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-neon-pink/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto max-w-6xl relative z-10">
@@ -88,9 +88,9 @@ export default function Testimonials({ translations }: TestimonialsProps) {
                   className="relative group"
                 >
                   <div className="h-full p-6 rounded-2xl bg-gradient-to-br from-white/5 to-transparent 
-                                border border-white/10 backdrop-blur-sm hover:border-neon-pink/30
+                                border border-white/10 backdrop-blur-sm hover:border-primary/30
                                 transition-all duration-300">
-                    <Quote className="w-8 h-8 text-neon-pink/30 mb-4" />
+                    <Quote className="w-8 h-8 text-primary/30 mb-4" />
                     
                     <p className="text-gray-300 mb-6 leading-relaxed italic">
                       "{testimonial.text}"
@@ -98,12 +98,12 @@ export default function Testimonials({ translations }: TestimonialsProps) {
 
                     <div className="flex items-center gap-1 mb-4">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 text-neon-pink fill-neon-pink" />
+                        <Star key={i} className="w-4 h-4 text-primary fill-primary" />
                       ))}
                     </div>
 
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-neon-gradient flex items-center justify-center">
+                      <div className="w-10 h-10 rounded-full bg-primary-gradient flex items-center justify-center">
                         <span className="text-white font-bold">{testimonial.author[0]}</span>
                       </div>
                       <div>
@@ -153,7 +153,7 @@ export default function Testimonials({ translations }: TestimonialsProps) {
                 }}
                 className={`transition-all duration-300 rounded-full ${
                   activeIndex === index
-                    ? 'w-12 h-3 bg-neon-pink'
+                    ? 'w-12 h-3 bg-primary'
                     : 'w-3 h-3 bg-white/30 hover:bg-white/50'
                 }`}
               />

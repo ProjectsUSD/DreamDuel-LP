@@ -9,6 +9,7 @@ import LanguageSwitcher from './LanguageSwitcher';
 interface NavbarProps {
   translations: {
     home: string;
+    about: string;
     generator?: string;
     features: string;
     pricing: string;
@@ -22,6 +23,7 @@ export default function Navbar({ translations }: NavbarProps) {
 
   const navItems = [
     { name: translations.home, href: '#inicio' },
+    { name: translations.about, href: '#nosotros' },
     { name: translations.features, href: '#caracteristicas' },
     { name: translations.pricing, href: '#planes' },
     { name: translations.testimonials, href: '#testimonios' },

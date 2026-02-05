@@ -27,7 +27,7 @@ export default function HeroSection({ translations }: HeroSectionProps) {
         {typeof window !== 'undefined' && [...Array(20)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-1 h-1 bg-neon-pink rounded-full"
+            className="absolute w-1 h-1 bg-primary rounded-full"
             initial={{
               x: Math.random() * window.innerWidth,
               y: Math.random() * window.innerHeight,
@@ -47,8 +47,8 @@ export default function HeroSection({ translations }: HeroSectionProps) {
       </div>
 
       {/* Gradient blobs background */}
-      <div className="absolute top-20 left-10 w-96 h-96 bg-neon-pink/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-neon-violet/20 rounded-full blur-3xl animate-pulse" 
+      <div className="absolute top-20 left-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-glow/20 rounded-full blur-3xl animate-pulse" 
            style={{ animationDelay: '1s' }} />
 
       <div className="container mx-auto max-w-7xl relative z-10">
@@ -64,11 +64,11 @@ export default function HeroSection({ translations }: HeroSectionProps) {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neon-violet/10 
-                         border border-neon-violet/30 mb-6"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 
+                         border border-primary/30 mb-6"
               >
-                <Sparkles className="w-4 h-4 text-neon-violet" />
-                <span className="text-sm text-neon-violet font-medium">{translations.badge}</span>
+                <Sparkles className="w-4 h-4 text-primary" />
+                <span className="text-sm text-primary font-medium">{translations.badge}</span>
               </motion.div>
 
               <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold leading-tight mb-4 md:mb-6">
@@ -112,8 +112,8 @@ export default function HeroSection({ translations }: HeroSectionProps) {
                 whileTap={{ scale: 0.95 }}
                 onHoverStart={() => setHoveredBtn(true)}
                 onHoverEnd={() => setHoveredBtn(false)}
-                className="group relative px-8 md:px-10 py-4 md:py-5 rounded-xl bg-neon-gradient text-white font-semibold text-lg md:text-xl
-                         shadow-lg shadow-neon-pink/30 hover:shadow-neon-pink/50 transition-all duration-300
+                className="group relative px-8 md:px-10 py-4 md:py-5 rounded-xl bg-primary-gradient text-white font-semibold text-lg md:text-xl
+                         shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-all duration-300
                          overflow-hidden"
               >
                 <span className="relative z-10 flex items-center justify-center gap-2">
