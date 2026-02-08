@@ -41,15 +41,7 @@
     ],
     "stats": [
       {
-        "number": "10K+",
-        "label": "Fantasies Created"
-      },
-      {
-        "number": "30 sec",
-        "label": "Average Time"
-      },
-      {
-        "number": "98%",
+        "number": "90%",
         "label": "Satisfaction"
       },
       {
@@ -65,12 +57,11 @@
     "ctaSubtitle": "Be part of the AI revolution that's changing how we create personalized adult content"
   },
   "hero": {
-    "badge": "Fantasies → Reality in 30 seconds",
+    "badge": "Fantasies → Reality",
     "title": "Your Fantasies, Tangible Reality",
-    "subtitle": "Turn simple fantasies into visual stories with AI. Just describe people, theme, and context - AI creates the rest in 30 seconds.",
+    "subtitle": "Turn simple fantasies into visual stories with AI. Just describe people, theme, and context - AI creates the rest.",
     "cta": "Try Image Generator Free",
     "noLimits": "No limits",
-    "storiesCreated": "10K+ stories created",
     "privacyGuaranteed": "Privacy guaranteed"
   },
   "ageVerification": {
@@ -92,7 +83,7 @@
       },
       {
         "title": "Instant Visual Generation",
-        "description": "Each scene includes consistent images and subtle animations. From imagined fantasy to 5-10 visual panels with coherent characters in 30 seconds. Uncensored content for adults."
+        "description": "Each scene includes consistent images and subtle animations. From imagined fantasy to 5-10 visual panels with coherent characters. Uncensored content for adults."
       },
       {
         "title": "Total Privacy Guaranteed",
@@ -166,7 +157,7 @@
   "waitlist": {
     "badge": "Coming Soon",
     "title": "Be Among the First to Materialize Your Fantasies",
-    "subtitle": "Join the waitlist and get early access to DreamDuel. The first 1000 users will get Premium free for 3 months.",
+    "subtitle": "Join the waitlist and get early access to DreamDuel. The first 1000 users will get Premium free for 1 month.",
     "emailPlaceholder": "your@email.com",
     "ctaButton": "Join Waitlist",
     "successTitle": "Welcome to the Waitlist! 🎉",
@@ -178,7 +169,7 @@
     "freeAccess": "Free for limited time",
     "priorityAccess": "Priority access",
     "stats": {
-      "users": "2,547+ on list",
+      "users": "902 on list",
       "waitTime": "Launch Feb 2026"
     }
   },
@@ -207,7 +198,7 @@
       },
       {
         "title": "Lust in the Office",
-        "description": "Carlos created: 'Ana, Pedro, lust, boardroom'. In 30 seconds he got a 6-scene story with consistent images and subtle animations. Fantasy he imagined, now tangible. What scenario do you imagine?"
+        "description": "Carlos created: 'Ana, Pedro, lust, boardroom'. He got a 6-scene story with consistent images and subtle animations. Fantasy he imagined, now tangible. What scenario do you imagine?"
       },
       {
         "title": "Power and Seduction",
@@ -236,7 +227,7 @@
     "subtitle": "Real creators materializing their fantasies",
     "items": [
       {
-        "text": "Wrote 'my boss, me, sexual revenge, office' and in 30 seconds had 8 INSANE scenes. Quality is crazy, looks like professional comic for real.",
+        "text": "Wrote 'my boss, me, sexual revenge, office' and had 8 INSANE scenes. Quality is crazy, looks like professional comic for real.",
         "author": "Alex R.",
         "role": "Premium User"
       },
@@ -271,7 +262,7 @@
         "role": "Premium User"
       },
       {
-        "text": "Simple input, incredible output. From fantasy in my mind to 10 visual panels in 30 seconds. AI expands everything automatically.",
+        "text": "Simple input, incredible output. From fantasy in my mind to 10 visual panels. AI expands everything automatically.",
         "author": "Javier P.",
         "role": "Beta Tester"
       }

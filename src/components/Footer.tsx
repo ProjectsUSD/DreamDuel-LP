@@ -163,7 +163,7 @@ export default function Footer({ translations }: FooterProps) {
 
             <div className="flex items-center gap-2 text-sm text-text-muted p-3 rounded-lg bg-bg-card border border-white/10">
               <Mail className="w-4 h-4 text-primary" />
-              <span>support@dreamduel.com</span>
+              <span>info@dreamduel.lat</span>
             </div>
           </motion.div>
         </div>

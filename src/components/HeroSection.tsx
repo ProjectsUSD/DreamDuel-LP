@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Sparkles, ArrowRight, MessageCircle, Heart } from 'lucide-react';
+import { Sparkles, ArrowRight, MessageCircle } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -12,7 +12,6 @@ interface HeroSectionProps {
     subtitle: string;
     cta: string;
     noLimits: string;
-    storiesCreated: string;
     privacyGuaranteed: string;
   };
 }
@@ -135,12 +134,8 @@ export default function HeroSection({ translations }: HeroSectionProps) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 pt-4"
+              className="flex items-center justify-center gap-3 sm:gap-6 pt-4"
             >
-              <div className="flex items-center gap-2">
-                <Heart className="w-4 h-4 md:w-5 md:h-5 text-neon-pink fill-neon-pink" />
-                <span className="text-xs md:text-sm text-gray-400">{translations.storiesCreated}</span>
-              </div>
               <div className="flex items-center gap-2">
                 <MessageCircle className="w-4 h-4 md:w-5 md:h-5 text-neon-violet" />
                 <span className="text-xs md:text-sm text-gray-400">{translations.privacyGuaranteed}</span>

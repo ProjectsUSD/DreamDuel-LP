@@ -41,15 +41,7 @@
     ],
     "stats": [
       {
-        "number": "10K+",
-        "label": "Fantasías Creadas"
-      },
-      {
-        "number": "30 seg",
-        "label": "Tiempo Promedio"
-      },
-      {
-        "number": "98%",
+        "number": "90%",
         "label": "Satisfacción"
       },
       {
@@ -65,12 +57,11 @@
     "ctaSubtitle": "Sé parte de la revolución de IA que está cambiando cómo creamos contenido adulto personalizado"
   },
   "hero": {
-    "badge": "Fantasías → Realidad en 30 segundos",
+    "badge": "Fantasías → Realidad",
     "title": "Tus Fantasías, Realidad Tangible",
-    "subtitle": "Convierte fantasías simples en historias visuales con IA. Solo describe personas, temática y contexto - la IA crea el resto en 30 segundos.",
+    "subtitle": "Convierte fantasías simples en historias visuales con IA. Solo describe personas, temática y contexto - la IA crea el resto.",
     "cta": "Probar Generador de Imágenes Gratis",
     "noLimits": "Sin límites",
-    "storiesCreated": "10K+ historias creadas",
     "privacyGuaranteed": "Privacidad garantizada"
   },
   "ageVerification": {
@@ -92,7 +83,7 @@
       },
       {
         "title": "Generación Visual Inmediata",
-        "description": "Cada escena incluye imágenes consistentes y animaciones sutiles. De fantasía imaginada a 5-10 paneles visuales con personajes coherentes en 30 segundos. Contenido sin censura para adultos."
+        "description": "Cada escena incluye imágenes consistentes y animaciones sutiles. De fantasía imaginada a 5-10 paneles visuales con personajes coherentes. Contenido sin censura para adultos."
       },
       {
         "title": "Privacidad Total Garantizada",
@@ -166,7 +157,7 @@
   "waitlist": {
     "badge": "Lanzamiento Próximo",
     "title": "Sé de los Primeros en Materializar tus Fantasías",
-    "subtitle": "Únete a la lista de espera y obtén acceso anticipado a DreamDuel. Los primeros 1000 usuarios tendrán Premium gratis por 3 meses.",
+    "subtitle": "Únete a la lista de espera y obtén acceso anticipado a DreamDuel. Los primeros 1000 usuarios tendrán Premium gratis por 1 mes.",
     "emailPlaceholder": "tu@email.com",
     "ctaButton": "Unirme a la Waitlist",
     "successTitle": "¡Bienvenido a la Waitlist! 🎉",
@@ -178,7 +169,7 @@
     "freeAccess": "Gratis por tiempo limitado",
     "priorityAccess": "Acceso prioritario",
     "stats": {
-      "users": "2,547+ en lista",
+      "users": "902 en lista",
       "waitTime": "Lanzamiento Feb 2026"
     }
   },
@@ -207,7 +198,7 @@
       },
       {
         "title": "Lujuria en la Oficina",
-        "description": "Carlos creó: 'Ana, Pedro, lujuria, sala de juntas'. En 30 segundos obtuvo una historia de 6 escenas con imágenes consistentes y animaciones sutiles. Fantasía que imaginó, ahora tangible. ¿Qué escenario imaginas?"
+        "description": "Carlos creó: 'Ana, Pedro, lujuria, sala de juntas'. Obtuvo una historia de 6 escenas con imágenes consistentes y animaciones sutiles. Fantasía que imaginó, ahora tangible. ¿Qué escenario imaginas?"
       },
       {
         "title": "Poder y Seducción",
@@ -236,7 +227,7 @@
     "subtitle": "Creadores reales materializando sus fantasías",
     "items": [
       {
-        "text": "Escribí 'mi jefa, yo, venganza sexual, oficina' y en 30 segundos tenía 8 escenas BRUTALES. La calidad es insana, parece cómic profesional posta.",
+        "text": "Escribí 'mi jefa, yo, venganza sexual, oficina' y tenía 8 escenas BRUTALES. La calidad es insana, parece cómic profesional posta.",
         "author": "Alex R.",
         "role": "Usuario Premium"
       },
@@ -271,7 +262,7 @@
         "role": "Usuario Premium"
       },
       {
-        "text": "Input simple, output increíble. De fantasía en mi mente a 10 paneles visuales en 30 segundos. La IA expande todo automáticamente.",
+        "text": "Input simple, output increíble. De fantasía en mi mente a 10 paneles visuales. La IA expande todo automáticamente.",
         "author": "Javier P.",
         "role": "Beta Tester"
       }

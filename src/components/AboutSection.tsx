@@ -89,7 +89,7 @@ export default function AboutSection({ translations }: AboutSectionProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20"
+          className="grid grid-cols-2 gap-8 mb-20 max-w-3xl mx-auto"
         >
           {translations.stats.map((stat, index) => (
             <div

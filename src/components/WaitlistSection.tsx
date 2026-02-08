@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Mail, CheckCircle2, Sparkles, Users, Clock } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface WaitlistSectionProps {
   translations: {
@@ -31,10 +31,22 @@ export default function WaitlistSection({ translations }: WaitlistSectionProps) 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [waitlistCount, setWaitlistCount] = useState(902);
 
   // Configuración: cambiar a true cuando el backend esté listo
   const USE_REAL_API = process.env.NEXT_PUBLIC_USE_REAL_API === 'true';
   const WAITLIST_API_URL = process.env.NEXT_PUBLIC_WAITLIST_API_URL || '/api/waitlist';
+
+  // Incrementar contador de forma aleatoria cada 45 segundos
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Incremento aleatorio entre 1 y 5
+      const increment = Math.floor(Math.random() * 5) + 1;
+      setWaitlistCount(prev => prev + increment);
+    }, 45000); // 45 segundos
+
+    return () => clearInterval(interval);
+  }, []);
 
   const validateEmail = (email: string) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -144,7 +156,16 @@ export default function WaitlistSection({ translations }: WaitlistSectionProps) 
           <div className="flex items-center justify-center gap-6 md:gap-12 mb-10">
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-primary" />
-              <span className="text-white font-semibold">{translations.stats.users}</span>
+              <motion.span 
+                key={waitlistCount}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="text-white font-semibold"
+              >
+                {waitlistCount} {translations.stats.users.includes('lista') || translations.stats.users.includes('list') 
+                  ? translations.stats.users.split(' ')[1] + ' ' + translations.stats.users.split(' ')[2]
+                  : 'on list'}
+              </motion.span>
             </div>
             <div className="w-px h-6 bg-white/20" />
             <div className="flex items-center gap-2">
