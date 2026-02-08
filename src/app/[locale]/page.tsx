@@ -48,7 +48,6 @@ export default function Home() {
           subtitle: t('hero.subtitle'),
           cta: t('hero.cta'),
           noLimits: t('hero.noLimits'),
-          storiesCreated: t('hero.storiesCreated'),
           privacyGuaranteed: t('hero.privacyGuaranteed'),
         }}
       />
