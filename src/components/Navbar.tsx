@@ -14,7 +14,6 @@ interface NavbarProps {
     features: string;
     pricing: string;
     testimonials: string;
-    waitlist: string;
   };
 }
 
@@ -27,7 +26,6 @@ export default function Navbar({ translations }: NavbarProps) {
     { name: translations.features, href: '#caracteristicas' },
     { name: translations.pricing, href: '#planes' },
     { name: translations.testimonials, href: '#testimonios' },
-    { name: translations.waitlist, href: '#waitlist' },
   ];
 
   const scrollToSection = (href: string) => {

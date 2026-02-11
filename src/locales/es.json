@@ -155,9 +155,9 @@
     ]
   },
   "waitlist": {
-    "badge": "Lanzamiento Próximo",
-    "title": "Sé de los Primeros en Materializar tus Fantasías",
-    "subtitle": "Únete a la lista de espera y obtén acceso anticipado a DreamDuel. Los primeros 1000 usuarios tendrán Premium gratis por 1 mes.",
+    "badge": "¡Oferta Limitada!",
+    "title": "Únete a la Revolución de IA",
+    "subtitle": "Las primeras 1000 personas que se registren obtendrán 1 mes de Premium completamente GRATIS. ¡No te quedes fuera!",
     "emailPlaceholder": "tu@email.com",
     "ctaButton": "Unirme a la Waitlist",
     "successTitle": "¡Bienvenido a la Waitlist! 🎉",
@@ -169,7 +169,7 @@
     "freeAccess": "Gratis por tiempo limitado",
     "priorityAccess": "Acceso prioritario",
     "stats": {
-      "users": "902 en lista",
+      "users": "personas interesadas",
       "waitTime": "Lanzamiento Feb 2026"
     }
   },
