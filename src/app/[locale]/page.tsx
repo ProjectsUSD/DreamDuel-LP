@@ -29,7 +29,6 @@ export default function Home() {
           features: t('navbar.features'),
           pricing: t('navbar.pricing'),
           testimonials: t('navbar.testimonials'),
-          waitlist: t('navbar.waitlist'),
         }}
       />
 
@@ -114,14 +113,6 @@ export default function Home() {
           badge: t('waitlist.badge'),
           title: t('waitlist.title'),
           subtitle: t('waitlist.subtitle'),
-          emailPlaceholder: t('waitlist.emailPlaceholder'),
-          ctaButton: t('waitlist.ctaButton'),
-          successTitle: t('waitlist.successTitle'),
-          successMessage: t('waitlist.successMessage'),
-          loading: t('waitlist.loading'),
-          disclaimer: t('waitlist.disclaimer'),
-          errorEmail: t('waitlist.errorEmail'),
-          errorInvalidEmail: t('waitlist.errorInvalidEmail'),
           freeAccess: t('waitlist.freeAccess'),
           priorityAccess: t('waitlist.priorityAccess'),
           stats: {
